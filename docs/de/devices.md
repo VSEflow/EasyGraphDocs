@@ -356,7 +356,7 @@ Wenn Sie den Drucksensor zum ersten Mal anschließen, lesen Sie im Kapitel [Onli
 
 #### Einstellungen
 
-**:material-lineal: Druckeinheit**: Sie können zwischen den folgenden Optionen wählen:
+**:material-ruler: Druckeinheit**: Sie können zwischen den folgenden Optionen wählen:
 
 Einheiten |
 --- | 
