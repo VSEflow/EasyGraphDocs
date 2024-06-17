@@ -2,7 +2,7 @@ Springen Sie schnell zu dem entsprechenden Abschnitt:
 
 :material-arrow-right: [log.flow](devices.md#logflow-datalogging-system)
 
-:material-pfeil-rechts: [IO.flow®](devices.md#ioflow-with-usb-master)
+:material-arrow-right: [IO.flow®](devices.md#ioflow-with-usb-master)
 
 :material-arrow-right: [Display/FU-Wandler](devices.md#displayfu-wandler-rs232)
 
