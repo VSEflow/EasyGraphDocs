@@ -70,7 +70,7 @@ Es stehen vier verschiedene Import-/Export-Dateitypen zur Verfügung:
 
 Dateityp | Dateierweiterung | Vorteile | Nachteile | Empfohlen
 --- | --- | --- | --- | ---
-[Protokollpuffer :material-link:](https://protobuf.dev/) | pb.bin | Schnellste, kleine Größe | Nicht portabel für andere Programme | :octicons-check-16:
+[Protocol Buffer :material-link:](https://protobuf.dev/) | pb.bin | Schnellste, kleine Größe | Nicht portabel für andere Programme | :octicons-check-16:
 Excel Sheet | xlsx | Weithin unterstützter Dateityp, Excel-Grafiken | Sehr langsam, Zeilenbegrenzung, hoher RAM-Verbrauch |
 XML-Datei | xml | Schnelles, lesbares Format | Sehr umfangreich und große Dateigröße |
 PDF-Datei | pdf | Sieht gut aus, kann schnell einen Bericht erstellen | Keine tatsächlichen Daten, nur Bild der Darstellung | :octicons-check-16: 

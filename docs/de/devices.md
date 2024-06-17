@@ -321,7 +321,7 @@ EasyGraph unterstützt auch die Verwendung von esi USB-Drucksensoren.
 Derzeit [v2.0.5] werden die folgenden Sensoren unterstützt:
 
 - esi [GS4200-USB](https://esi-tec.com/product/gs4200-usb/) (langsame Datenübertragung)
-    - Abtastrate: bis zu ~2 Hz
+- Abtastrate: bis zu ~2 Hz
 
 Die Unterstützung des viel schnelleren [GD4200-USB](https://esi-tec.com/product/gd4200-usb/) (~1000 Hz) ist für zukünftige Versionen geplant.
 

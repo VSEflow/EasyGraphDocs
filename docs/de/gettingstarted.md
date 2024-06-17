@@ -53,14 +53,14 @@ Nach dem Kauf erhalten Sie eine E-Mail mit dem Lizenzschlüssel. Nachdem Sie die
 
 Um eine Geräteverbindung herzustellen, vergewissern Sie sich, dass das Gerät richtig mit dem Computer verbunden und eingeschaltet ist. Hilfe dazu finden Sie in der [gerätespezifischen Verbindungsanleitung](devices.md). 
 
-<Figur markdown>
+<figure markdown>
   ![connectbtn](img/connectbtn.png){ loading=lazy }
   <figcaption>Klicken Sie auf die Schaltfläche "Verbinden", um den Verbindungsvorgang zu starten</figcaption>
 </figure>
 
 Öffnen Sie das Menü "Gerät" in der oberen Menüleiste und wählen Sie das Gerät aus, mit dem Sie eine Verbindung herstellen möchten. Mit der Schaltfläche "Verbinden" starten Sie den Verbindungsvorgang, der vollautomatisch ablaufen sollte (außer bei der Option "Display/FU", wo ein COM-Port ausgewählt werden muss). Wenn diese Schaltfläche nicht verfügbar ist, haben Sie möglicherweise keinen Lizenzschlüssel eingegeben, wie im [vorherigen Kapitel](gettingstarted.md#software-activation) beschrieben. 
 
-<Abbildung markdown>
+<figure markdown>
   ![livegraph](img/livegraph.png){ loading=lazy }
   <figcaption>EasyGraph-Fenster, wenn ein Gerät angeschlossen ist</figcaption>
 </figure>
