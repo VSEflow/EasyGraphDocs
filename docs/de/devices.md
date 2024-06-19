@@ -158,22 +158,22 @@ Die verfügbaren Optionen für die Eingangskonfiguration hängen wiederum vom Ge
 
     **Kanal 2**
 
-    Kanal 2 der _standard log.flow Version_ erweitert die Funktionen von Kanal 1 um eine zusätzliche externe Lautstärkerückstellfunktion. Sie können zwischen den folgenden Optionen wählen:
+    Kanal 2 der _standard log.flow Version_ erweitert die Funktionen von Kanal 1 um eine zusätzliche externe Volumenrückstellfunktion. Sie können zwischen den folgenden Optionen wählen:
 
     ![extreset](img/extreset.png)
 
-    Um diese Funktion zu nutzen, schließen Sie ein digitales 24V-Eingangssignal, einen Schalter/Taster oder etwas Ähnliches an den zweiten Kanal an. Wenn die ausgewählte Bedingung erfüllt ist, wird die Lautstärke von Kanal 1 zurückgesetzt. 
+    Um diese Funktion zu nutzen, schließen Sie ein digitales 24V-Eingangssignal, einen Schalter/Taster oder etwas Ähnliches an den zweiten Kanal an. Wenn die ausgewählte Bedingung erfüllt ist, wird das Volumen von Kanal 1 zurückgesetzt. 
 
     Die flankenempfindlichen Einstellungen setzen den Wert bei einem Pinwechsel zurück. Bei Verwendung dieser Option sollten mechanische Schalter mit einem Tiefpassfilter entprellt werden.
 
-    Die pegelempfindlichen Einstellungen halten den Lautstärkewert auf Null, solange die Bedingung erfüllt ist.
+    Die pegelempfindlichen Einstellungen halten den Volumenwert auf Null, solange die Bedingung erfüllt ist.
 
     !!! tip "Tipp: PNP-Eingang"
         Der einfachste Weg, einen externen Schalter anzuschließen, besteht darin, ihn zwischen die 24V-Leitung und den Eingangspin (2 oder 4) zu schalten. Der log.flow-Eingang verhält sich durch den internen Pulldown-Widerstand wie ein PNP-Eingang.
 
         <Zeichenabschrift>
         ![connectbtn](img/logflow_edge_volreset.svg){ loading=lazy }
-        <figcaption>Beispiel für den Anschluss eines Schalters zur externen Rückstellung der Lautstärke</figcaption>
+        <figcaption>Beispiel für den Anschluss eines Schalters zur externen Rückstellung des Volumens</figcaption>
         </figure>
 
 === "log.flow V (4881/V)"

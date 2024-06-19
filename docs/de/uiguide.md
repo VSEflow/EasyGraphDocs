@@ -92,7 +92,7 @@ Die **Livewerttafel** enthält die aktuellen Werte des Datenloggers. Die Anzahl 
 
 Die **Anzahl der sichtbaren Nachkommastellen** kann für Volumen und Durchfluss im [Math menu](uiguide.md#math) separat eingestellt werden. Diese Einstellung hat keinen Einfluss auf die Aufzeichnungsauflösung oder den internen Wert. In diesem Menü können Sie auch die **Einheitenbezeichnung** ändern, die unter dem Wert angezeigt wird. Um den Wert tatsächlich in andere Einheiten umzurechnen, verwenden Sie die mathematischen Optionen (Faktor und Summand). 
 
-Wenn das log.flow-Gerät angeschlossen ist, verfügt die Lautstärkeanzeige über eine Schaltfläche "Lautstärke zurücksetzen", mit der die Lautstärke schnell auf Null zurückgesetzt werden kann.
+Wenn das log.flow-Gerät angeschlossen ist, verfügt die Volumenanzeige über eine Schaltfläche "Volumen zurücksetzen", mit der das Volumen schnell auf Null zurückgesetzt werden kann.
 
 
 !!! Tipp "Mittlerer Mausklick"
