@@ -1,0 +1,1288 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="devices.html">
+      
+      
+        <link rel="next" href="advanced.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Benutzeroberfläche - VSE EasyGraph v2.1.0 Dokumentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bedienfelder" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="index.html" title="VSE EasyGraph v2.1.0 Dokumentation" class="md-header__button md-logo" aria-label="VSE EasyGraph v2.1.0 Dokumentation" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VSE EasyGraph v2.1.0 Dokumentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Benutzeroberfläche
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sprache wechseln">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../uiguide.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="uiguide.html" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Hauptnavigation" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="gettingstarted.html" class="md-tabs__link">
+        
+  
+    
+  
+  Erste Schritte
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="devices.html" class="md-tabs__link">
+        
+  
+    
+  
+  Geräte
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="uiguide.html" class="md-tabs__link">
+        
+  
+    
+  
+  Benutzeroberfläche
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="advanced.html" class="md-tabs__link">
+        
+  
+    
+  
+  Sonderfunktionen
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="logflow.html" class="md-tabs__link">
+        
+  
+    
+  
+  Log.flow
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="faqs.html" class="md-tabs__link">
+        
+  
+    
+  
+  Problemlösungen
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="about.html" class="md-tabs__link">
+        
+  
+    
+  
+  Über
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="VSE EasyGraph v2.1.0 Dokumentation" class="md-nav__button md-logo" aria-label="VSE EasyGraph v2.1.0 Dokumentation" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    VSE EasyGraph v2.1.0 Dokumentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gettingstarted.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Erste Schritte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="devices.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geräte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Benutzeroberfläche
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="uiguide.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Benutzeroberfläche
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bedienfelder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bedienfelder
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bedienfelder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#live-graph-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Live-Grafik-Panel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Live-Grafik-Panel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plot-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plot-Navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steuerelemente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#begrenzungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Begrenzungen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recordings-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bedienfeld für Aufzeichnungen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bedienfeld für Aufzeichnungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filetypes-importexport" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateitypen + Import/Export
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dateitypen + Import/Export">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pdf-bericht" class="md-nav__link">
+    <span class="md-ellipsis">
+      PDF-Bericht
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#live-value-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Live-Werte-Panel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Live-Werte-Panel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cursor-messung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cursor-Messung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-browser-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      File browser panel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-menu-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main menu bar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main menu bar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file" class="md-nav__link">
+    <span class="md-ellipsis">
+      File
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aktualisierungsprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aktualisierungsprüfung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gerät
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datenprotokollierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Datenprotokollierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trigger-optionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigger-Optionen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auslosebedingungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auslösebedingungen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dosiermodus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dosiermodus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#math" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematik
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#window" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fenster
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fenster">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sichtbarkeit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sichtbarkeit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#powersave-modus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Powersave-Modus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fenster-startposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fenster Startposition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hilfe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hilfe
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="advanced.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sonderfunktionen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logflow.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log.flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faqs.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problemlösungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Über
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Benutzeroberfläche</h1>
+
+<h2 id="bedienfelder">Bedienfelder<a class="headerlink" href="#bedienfelder" title="Permanent link">#</a></h2>
+<p>Die Benutzeroberfläche der Software basiert auf Panels in einem Hauptfenster. Standardmäßig besteht das Hauptfenster aus dem großen <a href="uiguide.html#live-graph-panel"><strong>Live-Graph-Panel</strong></a> und einem <a href="uiguide.html#live-value-panel"><strong>Live-Wert-Panel</strong></a> auf der rechten Seite, aber zusätzliche Fenster können über das <a href="uiguide.html#window">Fenster-Menü</a> umgeschaltet werden. Sie können die Panels aus dem Fenster ziehen, indem Sie auf die Titelleiste jedes Panels ziehen und sie loslassen. Um sie wieder anzudocken, halten Sie beim Ziehen die Taste <code>SHIFT</code> gedrückt und verwenden Sie das Overlay, um es zu positionieren. </p>
+<p>Zuvor gespeicherte Aufnahmen werden als Registerkarten des <a href="uiguide.html#live-graph-panel"><strong>Live-Graph-Panels</strong></a> geöffnet. Sie erkennen sie an dem Präfix <code>Datei:</code> in der Titelleiste.</p>
+<h3 id="live-graph-panel">Live-Grafik-Panel<a class="headerlink" href="#live-graph-panel" title="Permanent link">#</a></h3>
+<h4 id="plot-navigation">Plot-Navigation<a class="headerlink" href="#plot-navigation" title="Permanent link">#</a></h4>
+<p>Das Plot-Fenster zeigt einen XY-Plot der Messdaten. Während sich die X-Achse auf die Zeit bezieht, bezieht sich die Y-Achse auf den aktuellen Wert. Auf der linken und rechten Seite des Diagramms können sich zwei separate Y-Achsen befinden. Dies geschieht, um die verschiedenen Dimensionen der Durchflussrate und des Volumens separat zu kontrollieren. </p>
+<div class="admonition info inline end">
+<p class="admonition-title">Hinweis: Dies gilt sowohl für die Live-Darstellung als auch für den Dateibetrachter</p>
+</div>
+<p>Benutzen Sie Ihre Maus, um im Plotfenster zu navigieren:</p>
+<ul>
+<li>Durch Klicken und Ziehen mit der linken Maustaste auf den Plot wird dieser verschoben. </li>
+<li>Klicken und Ziehen mit der linken Maustaste auf eine Achse verschiebt nur diese Achse</li>
+<li>Ein Doppelklick mit der linken Maustaste auf eine Achse passt diese automatisch an und stellt auch die Funktion <a href="uiguide.html#controls">Auto-Scroll oder AutoScale</a> wieder her.</li>
+<li>Klicken und Ziehen mit der rechten Maustaste wählt einen Bereich aus, in den gezoomt werden soll</li>
+<li>Scrollen auf einer Achse oder dem Plot zoomt ein/aus</li>
+</ul>
+<p>Sehen Sie sich das folgende Video an:</p>
+<video controls autoplay loop src="img/ui_easygraph.mp4"> </video>
+
+<h4 id="controls">Steuerelemente<a class="headerlink" href="#controls" title="Permanent link">#</a></h4>
+<ul>
+<li>
+<p><strong>Start/Pause-Taste:</strong> Startet oder pausiert den eingehenden Datenstrom. Alle Samples während einer Pause werden verworfen. Alternativ können Sie die Auto-Scroll-Funktion deaktivieren (siehe unten), um die Darstellung visuell anzuhalten, während der Datenstrom weiterläuft.</p>
+</li>
+<li>
+<p><strong>Trigger-Schaltfläche:</strong> Aktiviert oder deaktiviert die Trigger-Funktion, die über das <a href="uiguide.html#data-logging">data logging menu</a> konfiguriert werden kann. Damit wird automatisch eine Aufzeichnung gestartet, wenn eine bestimmte Bedingung erfüllt ist.</p>
+</li>
+<li>
+<p><strong>Aufzeichnungsschaltfläche:</strong> Manuelles Starten oder Stoppen einer Aufzeichnung. Aktive/beendete Aufzeichnungen werden im <a href="uiguide.html#recordings-panel">Aufzeichnungs-Panel</a> angezeigt.</p>
+</li>
+<li>
+<p>Schaltfläche <strong>Löschen:</strong> Löscht alle historischen Daten im Live-Diagramm-Panel. Dies hinterlässt ein leeres Diagrammfenster.</p>
+</li>
+<li>
+<p><strong>Auto-Scroll-Funktion:</strong> Die Auto-Scroll-Funktion sorgt dafür, dass die rechte Seite des Diagramms an der aktuellen Zeit hängen bleibt. Das bedeutet, dass der Wert ganz rechts immer der zuletzt aufgezeichnete Wert ist. Infolgedessen wird das Diagramm mit fortschreitender Zeit automatisch gescrollt. In den meisten Fällen sollte diese Einstellung beibehalten werden. Wenn Sie mit der rechten Maustaste zoomen, wird diese Funktion deaktiviert. Wenn Sie auf die X-Achse doppelklicken, wird diese Funktion wieder aktiviert. Bevor Sie das Diagramm in X-Richtung verschieben können, müssen Sie die Funktion deaktivieren.</p>
+</li>
+<li>
+<p><strong>Auto-Scale-Funktion:</strong> Die Auto-Scale-Funktion passt die Y-Achsen automatisch an die sichtbaren Daten im Diagramm an. Sie ist auch abhängig von der gewählten Verlaufszeit. Die Funktion kann manchmal störend sein (bei sehr kleinen Wertänderungen) und Sie sollten in Erwägung ziehen, sie auszuschalten und die erwarteten Y-Bereiche manuell mit dem Scrollrad und durch Ziehen einzustellen.</p>
+</li>
+<li>
+<p><strong>Lock-Min-Funktion:</strong> Die Lock-Min-Funktion sperrt/fixiert den aktuellen Minimalwert (z.B. "0") der Flussachse. Diese Option kann in Kombination mit der Funktion <strong>Auto-Scale</strong> verwendet werden, um den Maximalwert automatisch zu skalieren, während die X-Achse im Blickfeld bleibt, und um nicht automatisch zu stark zu vergrößern. </p>
+</li>
+<li>
+<p><strong>Schieberegler für die Historie:</strong> Die ausgewählte Zeit auf dem Schieberegler für die Historie legt den sichtbaren Bereich der Darstellung fest. Er bestimmt, wie lange Sie in die Vergangenheit schauen können. Falls Sie log.flow verwenden und die [Abtastrate] (devices.md#measurement-configuration) auf <code>Automatic</code> gesetzt haben, wirkt sich die Verlaufszeit auch (umgekehrt proportional) auf die Abtastrate aus.</p>
+</li>
+</ul>
+<h4 id="begrenzungen">Begrenzungen<a class="headerlink" href="#begrenzungen" title="Permanent link">#</a></h4>
+<p>Um die RAM-Nutzung der Software moderat und die Leistung hoch zu halten, ist die maximale Anzahl der in der Grafik angezeigten Proben begrenzt. Daher werden die sichtbaren Samples entfernt, wenn sie eine Puffergröße von 524288 Samples überschreiten. Bitte beachten Sie, dass Aufzeichnungen von dieser Begrenzung nicht betroffen sind, da der Speicher dynamisch zugewiesen wird (solange genügend freier Arbeitsspeicher vorhanden ist).</p>
+<p>Wenn Sie lange Aufnahmen planen, ist es daher ratsam, die Sample-Rate des angeschlossenen Geräts zu reduzieren.</p>
+<h3 id="recordings-panel">Bedienfeld für Aufzeichnungen<a class="headerlink" href="#recordings-panel" title="Permanent link">#</a></h3>
+<p><img align="right" alt="fileinfo" src="img/fileinfo.png" /></p>
+<p>Das Aufnahme-Panel listet alle aktiven, beendeten und importierten Aufnahmen auf. Frische Aufnahmen bleiben nur im temporären Arbeitsspeicher erhalten, und Sie müssen sie <a href="uiguide.html#filetypes-importexport">exportieren</a>, um sie nach dem Beenden des Programms zu behalten. Neben dem Dateinamen werden verschiedene Icons angezeigt, die die verschiedenen Zustände der Datei anzeigen:</p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M380.8 416c41.5-40.7 67.2-97.3 67.2-160 0-123.7-100.3-224-224-224S0 132.3 0 256s100.3 224 224 224h320c17.7 0 32-14.3 32-32s-14.3-32-32-32H380.8zM224 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192zm64 96a64 64 0 1 0-128 0 64 64 0 1 0 128 0z"/></svg></span>: Datei wird gerade aufgezeichnet</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4Z"/></svg></span>: Die Datei ist ungespeichert und muss gespeichert werden</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg></span>: Datei wurde erfolgreich gespeichert.</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="m441 7 32 32 32 32c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-15-15-38.2 38.1 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-72-72L295 73c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l55 55L422.1 56 407 41c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0zM210.3 155.7l61.1-61.1c.3.3.6.7 1 1l16 16 56 56 56 56 16 16 1 1-191 191a55.924 55.924 0 0 1-39.6 16.4H97.9L41 505c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l57-57v-88.8c0-14.9 5.9-29.1 16.4-39.6l43.3-43.3 57 57c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-57-57 41.4-41.4 57 57c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-57-57z"/></svg></span>: Datei wurde mit [Dose-Mode] erstellt (advanced.md#dose-mode)</li>
+</ul>
+<p>Um eine Aufnahme zu verwalten, klicken Sie mit der rechten Maustaste auf den Listeneintrag. Es öffnet sich ein Fenster, das alle Metadaten der Datei enthält. Sie können die Felder einfach bearbeiten. Nach der Bearbeitung müssen Sie die Datei erneut speichern, da sie nicht automatisch auf Ihrer Festplatte aktualisiert wird.</p>
+<div class="admonition info">
+<p class="admonition-title">Hinweis: Schließen Sie die Datei, um den Namen zu bearbeiten</p>
+<p>Um den Namen einer Datei zu bearbeiten, müssen Sie die Registerkarte der Datei schließen, wenn sie im Live-Plot-Panel geöffnet ist.</p>
+</div>
+<h4 id="filetypes-importexport">Dateitypen + Import/Export<a class="headerlink" href="#filetypes-importexport" title="Permanent link">#</a></h4>
+<p>Es stehen vier verschiedene Import-/Export-Dateitypen zur Verfügung:</p>
+<table>
+<thead>
+<tr>
+<th>Dateityp</th>
+<th>Dateierweiterung</th>
+<th>Vorteile</th>
+<th>Nachteile</th>
+<th>Empfohlen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://protobuf.dev/">Protocol Buffer <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg></span></a></td>
+<td>pb.bin</td>
+<td>Schnellste, kleine Größe</td>
+<td>Nicht portabel für andere Programme</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg></span></td>
+</tr>
+<tr>
+<td>Excel Sheet</td>
+<td>xlsx</td>
+<td>Weithin unterstützter Dateityp, Excel-Grafiken</td>
+<td>Sehr langsam, Zeilenbegrenzung, hoher RAM-Verbrauch</td>
+<td></td>
+</tr>
+<tr>
+<td>XML-Datei</td>
+<td>xml</td>
+<td>Schnelles, lesbares Format</td>
+<td>Sehr umfangreich und große Dateigröße</td>
+<td></td>
+</tr>
+<tr>
+<td>PDF-Datei</td>
+<td>pdf</td>
+<td>Sieht gut aus, kann schnell einen Bericht erstellen</td>
+<td>Keine tatsächlichen Daten, nur Bild der Darstellung</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg></span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warnung">
+<p class="admonition-title">Excel sheet modifications</p>
+<p>Beim Importieren einer Excel-Tabelle, die zuvor mit EasyGraph exportiert wurde, können benutzerdefinierte Änderungen wie z.B. benutzerdefinierte Diagramme oder fehlende Zeilen dazu führen, dass die Datei nicht richtig geöffnet wird oder das Programm abstürzt.</p>
+</div>
+<h5 id="pdf-bericht">PDF-Bericht<a class="headerlink" href="#pdf-bericht" title="Permanent link">#</a></h5>
+<p>So sieht der exportierte PDF-Bericht aus:</p>
+<p><img alt="pdfreport" src="img/pdfreport.svg" width="50%" /></p>
+<h3 id="live-value-panel">Live-Werte-Panel<a class="headerlink" href="#live-value-panel" title="Permanent link">#</a></h3>
+<p><img align="right" alt="livevals" src="img/livevalues.png" /></p>
+<p>Die <strong>Livewerttafel</strong> enthält die aktuellen Werte des Datenloggers. Die Anzahl der sichtbaren Kanäle ist abhängig vom angeschlossenen Gerät (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> dessen Kanalfähigkeit) und davon, ob der Kanal im <a href="uiguide.html#plot">Plot-Menü</a> auf <strong><em>sichtbar</em></strong> gesetzt ist. Die Kanalnamen werden automatisch an das angeschlossene Gerät angepasst. </p>
+<p>Die <strong>Anzahl der sichtbaren Nachkommastellen</strong> kann für Volumen und Durchfluss im <a href="uiguide.html#math">Math menu</a> separat eingestellt werden. Diese Einstellung hat keinen Einfluss auf die Aufzeichnungsauflösung oder den internen Wert. In diesem Menü können Sie auch die <strong>Einheitenbezeichnung</strong> ändern, die unter dem Wert angezeigt wird. Um den Wert tatsächlich in andere Einheiten umzurechnen, verwenden Sie die mathematischen Optionen (Faktor und Summand). </p>
+<p>Wenn das log.flow-Gerät angeschlossen ist, verfügt die Volumenanzeige über eine Schaltfläche "Volumen zurücksetzen", mit der das Volumen schnell auf Null zurückgesetzt werden kann.</p>
+<div class="admonition tipp">
+<p class="admonition-title">Mittlerer Mausklick</p>
+<p>Verstecken/deaktivieren Sie unbenutzte Kanäle schnell, indem Sie mit der mittleren Maustaste darauf klicken. Sie können sie über das <a href="uiguide.html#plot">Plot-Menü</a> wieder aktivieren. Deaktivierte Kanäle werden aufgezeichnet, auch wenn sie ausgeblendet sind.</p>
+</div>
+<h4 id="cursor-messung">Cursor-Messung<a class="headerlink" href="#cursor-messung" title="Permanent link">#</a></h4>
+<p>Die Cursor-Messung kann entweder über die Schaltfläche <code>Cursor-Messung aktivieren</code> unterhalb der Live-Werte oder durch Ankreuzen der Option im <a href="uiguide.html#plot">Plot-Menü</a> aktiviert werden. Nach der Aktivierung ist es sinnvoll, die Funktionen <a href="uiguide.html#controls">Auto-Scroll und AutoScale</a> oder das Anhalten des Datenstroms über die Schaltfläche <a href="uiguide.html#controls">Running/Pause</a> zu deaktivieren. Nach der Aktivierung erscheinen bewegliche Cursors im Live-Plot-Fenster. Sie können sie verschieben, indem Sie mit der linken Maustaste klicken und die Linien oder ihre kleinen Rechteckgriffe an den Rändern des Plots ziehen. </p>
+<p>Unterhalb der <strong>Live-Werte</strong> finden Sie die Messwerte zwischen den Cursorlinien. Auch hier können Sie den Kanal, auf dem Sie messen wollen, über das Kombinationsfeld auswählen. Die Zeitwerte sind unabhängig von den Achsen. Die Messung ist in drei Abschnitte gegliedert: </p>
+<ul>
+<li>Im ersten Abschnitt werden die Zeitwerte an den Cursorn der X-Achse zusammen mit der Differenz (<code>Delta</code>) zwischen ihnen angezeigt. </li>
+<li>Der zweite Abschnitt enthält die Werte der Cursor der Y-Achse, bezogen auf den ausgewählten Kanal. Auch hier wird ihre Differenz angezeigt. </li>
+<li>Im dritten Bereich wird eine statistische Auswertung aller Messwerte zwischen den X-Achsen-Cursorn angezeigt. Sie können das Maximum (<code>yMax</code>), das Minimum (<code>yMin</code>) und den Durchschnitt (<code>yAvg</code>) aller dazwischen liegenden Werte sehen.</li>
+</ul>
+<div class="admonition warnung">
+<p class="admonition-title">Cursors don't support files atm</p>
+<p>Im Moment sind Cursor-Messungen in der Dateiansicht nicht verfügbar. Diese Funktion wird in zukünftigen Versionen hinzugefügt werden.</p>
+</div>
+<p><img alt="cursors" src="img/cursors.png" /></p>
+<h3 id="file-browser-panel">File browser panel<a class="headerlink" href="#file-browser-panel" title="Permanent link">#</a></h3>
+<p>You can show the <strong>file browser panel</strong> by enabling the option in the main menu bar using <code>Window</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> <code>Show File Browser</code>. This will display an explorer-like file browser on the left side of the plot window. </p>
+<p>In the topmost layer the file browser will list all attached harddrives and network drives. Additionally commonly used directories such as <code>Desktop</code>,  <code>User</code> and <code>Documents</code> will be shown. </p>
+<p>While directories are always shown, files are only shown if the filetype is compatible with <strong>EasyGraph</strong>. Supported file extensions are: <code>pb.bin</code>, <code>`xlsx</code> and <code>xml</code>. Import files (recordings) by double clicking on them. The program will then scan the file and verify, that it is compatible. If all checks pass, the file will be shown in the <a href="uiguide.html#recordings-panel">Recordings panel</a>.</p>
+<p><img alt="navbuttons" src="img/navbtn_content.png" /></p>
+<p>You can use the buttons at the top to perform certain actions:</p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35Z"/></svg></span> <strong>Refresh:</strong> Reload the current directory and re-list all files</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 8c-2.65 0-5.05 1-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8Z"/></svg></span> <strong>Up:</strong> Go up one directory layer until you reach the topmost layer with all drives and shortcuts</li>
+</ul>
+<h2 id="main-menu-bar">Main menu bar<a class="headerlink" href="#main-menu-bar" title="Permanent link">#</a></h2>
+<p>This section will go over every option in the main menu bar. </p>
+<h3 id="file">File<a class="headerlink" href="#file" title="Permanent link">#</a></h3>
+<p><img align="right" alt="filemenu" src="img/filemenu.png" /></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 4H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2Z"/></svg></span> Öffnen:</strong> Verwenden Sie den Explorer, um eine Aufnahme auszuwählen, die Sie wieder importieren möchten. Unterstützte Dateitypen sind <code>pb.bin</code>, <code>xlsx</code> und <code>xml</code>.</p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M.3 89.5C.1 91.6 0 93.8 0 96v320c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64c-2.2 0-4.4.1-6.5.3-9.2.9-17.8 3.8-25.5 8.2-10.2 6-18.6 14.6-24.3 25-3.9 7.3-6.5 15.4-7.4 24zM48 224h416v192c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224z"/></svg></span> Dateibrowser anzeigen:</strong> Verwenden Sie das integrierte <a href="uiguide.html#file-browser-panel">Dateibrowser-Panel</a>, um Aufnahmen für den Re-Import zu finden. </p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V173.3c0-17-6.7-33.3-18.7-45.3L352 50.7c-12-12-28.3-18.7-45.3-18.7H64zm0 96c0-17.7 14.3-32 32-32h192c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32v-64zm160 160a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></span> Alle ungespeicherten Aufnahmen speichern:</strong> Öffnet ein Explorer-Fenster, um das Verzeichnis auszuwählen, in das Sie alle ungespeicherten Aufnahmen speichern möchten. Es wird <strong><em>nicht</em></strong> nach vorhandenen Dateien gesucht, daher ist es ratsam, ein leeres Verzeichnis zu wählen.</p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span> Nach Updates suchen:</strong> Startet den Update-Checker. Dies erfordert eine funktionierende Internetverbindung. Wenn eine neue Version verfügbar ist, erhalten Sie weitere Informationen über neue Funktionen 
+und einen Download-Link. </p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><path d="M2.22 2.22a.749.749 0 0 1 1.06 0L6 4.939 8.72 2.22a.749.749 0 1 1 1.06 1.06L7.061 6 9.78 8.72a.749.749 0 1 1-1.06 1.06L6 7.061 3.28 9.78a.749.749 0 1 1-1.06-1.06L4.939 6 2.22 3.28a.749.749 0 0 1 0-1.06Z"/></svg></span> Beenden:</strong> Schließt die Anwendung.</p>
+<div class="admonition fehler">
+<p class="admonition-title">Schließen mit ungespeicherten Aufnahmen</p>
+<p>Wenn Sie die Anwendung mit ungespeicherten Aufnahmen schließen, wird ein Popup-Fenster angezeigt, das Sie auffordert, die Dateien entweder zu speichern oder zu verwerfen. Sie können das Schließen auch abbrechen und die Dateien selbst manuell speichern. </p>
+<p><img alt="confirmclose" src="img/confimclose.png" /></p>
+<ul>
+<li><strong>Schließen:</strong> Alle Aufnahmen verwerfen und das Programm schließen</li>
+<li><strong>Abbrechen:</strong> Das Programm nicht schließen, um manuell zu prüfen</li>
+<li><strong>Speichern:</strong> Alle nicht gespeicherten Aufnahmen in ein Verzeichnis speichern und danach schließen</li>
+</ul>
+</div>
+<h4 id="aktualisierungsprufung">Aktualisierungsprüfung<a class="headerlink" href="#aktualisierungsprufung" title="Permanent link">#</a></h4>
+<p>Bei jedem Programmstart prüft die Software auf Software-Updates. Updates können neue Funktionen, mehr Geräteunterstützung, Fehlerbehebungen und Stabilitätsverbesserungen enthalten. Wenn ein neues Update verfügbar ist, wird ein Fenster mit Informationen zu den Änderungen und einem Link zur Download-Seite angezeigt. </p>
+<p><img alt="update" src="img/update.png" /></p>
+<p>Das Update (<code>msi</code>-Datei) muss manuell installiert werden. Sie werden zu unserem Download-Portal weitergeleitet, wo Sie Ihre Kundennummer und den Produkt-/Lizenzschlüssel eingeben müssen.</p>
+<p>Sie können den Update-Checker auch manuell aufrufen, indem Sie auf die Versionsnummer in der oberen rechten Ecke klicken oder das <a href="uiguide.html#file">File menu</a> verwenden.</p>
+<h3 id="gerat">Gerät<a class="headerlink" href="#gerat" title="Permanent link">#</a></h3>
+<p>Das Gerätemenü verwaltet die Verbindung zu einem Datenerfassungsgerät und dessen Einstellungen. </p>
+<p>Da die Beschreibung sehr geräteabhängig und umfangreich ist, wurde sie in einem eigenen Abschnitt untergebracht. Sehen Sie sich das Kapitel <a href="devices.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg></span> Geräte</a> an!</p>
+<h3 id="plot">Plot<a class="headerlink" href="#plot" title="Permanent link">#</a></h3>
+<p><img align="right" alt="plot" src="img/plotmenu.png" /></p>
+<p>Das Plotmenü enthält Optionen, mit denen Sie das Aussehen des Plotfensters anpassen können:</p>
+<ul>
+<li>Sie können die Farbe jedes Plots ändern, indem Sie auf das farbige Quadrat klicken</li>
+<li>Plots ein-/ausblenden, indem Sie sie markieren/entmarkieren</li>
+<li>Verwenden Sie den Schieberegler, um die Linienstärke aller Diagramme zu ändern.</li>
+<li>Markierungen für jeden empfangenen Datenpunkt vom Datenlogger anzeigen</li>
+</ul>
+<p>Von hier aus können Sie auch die Funktion "Cursor Measure" aktivieren. Dies wird in [diesem Abschnitt] (uiguide.md#cursor-measurement) ausführlicher beschrieben.</p>
+<h3 id="data-logging">Datenprotokollierung<a class="headerlink" href="#data-logging" title="Permanent link">#</a></h3>
+<h4 id="trigger-optionen">Trigger-Optionen<a class="headerlink" href="#trigger-optionen" title="Permanent link">#</a></h4>
+<p><img align="right" alt="dataloggermenu" src="img/datalogmenu.png" /></p>
+<p>Das Menü <strong>Datenprotokollierung</strong> enthält Optionen für die Triggerfunktion. Der Trigger kann eine Aufzeichnung automatisch starten und stoppen, wenn eine oder mehrere vordefinierte Bedingungen erfüllt sind. </p>
+<p>Bevor Sie den Trigger über das entsprechende Kontrollkästchen oder über die Schaltfläche <a href="uiguide.html#controls">im Live-Diagramm-Panel</a> aktivieren, konfigurieren Sie die unten aufgeführten Trigger-Optionen. Sie können optional einen Benachrichtigungston einschalten, der über die Lautsprecher abgespielt wird, wenn der Trigger die Aufzeichnung startet oder stoppt.</p>
+<p><strong>Trigger-Modus:</strong> Zuerst müssen Sie den Trigger-Modus festlegen. Dieser legt fest, ob die Triggerfunktion nach dem ersten erfolgreichen Trigger deaktiviert wird (<code>OneShot</code>) oder für nachfolgende Trigger aktiv bleibt (<code>Repeating</code>).</p>
+<p><strong>Aufnahmedauer:</strong> Als nächstes stellen Sie die Aufnahmedauer mit dem Schieberegler ein. Die Gesamtdauer ergibt sich aus der Summe der Aufnahmedauer und der Pre-Trigger-Dauer, die Sie im nächsten Schritt einstellen.</p>
+<div class="admonition tipp">
+<p class="admonition-title">Tipp: Benutzerdefinierte Dauer</p>
+<p>Sie können eine benutzerdefinierte Dauer in Sekunden einstellen, indem Sie mit der linken Maustaste auf den Schieberegler klicken, während Sie die "STRG"-Taste auf der Tastatur gedrückt halten. So können Sie einen Wert manuell über die Tastatur eingeben. Speichern Sie mit der Taste "Enter". </p>
+</div>
+<p><strong>Vor-Trigger-Dauer:</strong> Mit dieser optionalen Funktion können Sie der Aufzeichnung Werte hinzufügen, die vor dem Start des Triggers passiert sind. So können Sie sehen, was im System geschah, bevor die Triggerbedingung eintrat. Nachdem Sie einen Wert ungleich Null eingestellt und den Trigger aktiviert haben, füllt sich der Pre-Trigger-Puffer (= Ringpuffer) mit Samples. Sobald er voll ist, können Sie aufzeichnen!</p>
+<h4 id="auslosebedingungen">Auslösebedingungen<a class="headerlink" href="#auslosebedingungen" title="Permanent link">#</a></h4>
+<p>Der Auslöser wird ausgelöst, wenn eine oder zwei Bedingungen zutreffen. Sie können auswählen, wie diese Bedingungen mathematisch miteinander interagieren:</p>
+<ul>
+<li><strong>Deaktiviert</strong>: Es wird nur Bedingung 1 verwendet</li>
+<li><strong>AND</strong>: Auslöser ist wahr, wenn Bedingung 1 und Bedingung 2 beide wahr sind</li>
+<li><strong>OR</strong>: Auslöser ist wahr, wenn entweder Bedingung 1 oder Bedingung 2 oder beide wahr sind</li>
+</ul>
+<p>Die Bedingungen selbst sind einfache Vergleiche, die Sie über Dropdown-Menüs konfigurieren können. Die verfügbaren Optionen sind in der folgenden Tabelle aufgelistet:</p>
+<table>
+<thead>
+<tr>
+<th>Kanäle</th>
+<th>Operatoren</th>
+<th>Operatorbeschreibung</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Durchflussrate 1</td>
+<td>=</td>
+<td>gleich</td>
+<td>Wert eingeben</td>
+</tr>
+<tr>
+<td>Durchfluss 2</td>
+<td>!=</td>
+<td>nicht gleich</td>
+<td></td>
+</tr>
+<tr>
+<td>Volumen 1</td>
+<td>&gt;</td>
+<td>größer als</td>
+<td></td>
+</tr>
+<tr>
+<td>Volumen 2</td>
+<td>&gt;=</td>
+<td>größer oder gleich</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;</td>
+<td>kleiner als</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;=</td>
+<td>kleiner oder gleich</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="dosiermodus">Dosiermodus<a class="headerlink" href="#dosiermodus" title="Permanent link">#</a></h4>
+<p>Der Dosiermodus ist für die Volumenmessung von Dosierschüssen vorgesehen. Der Volumenwert wird automatisch zurückgesetzt, wenn die Durchflussrate für eine bestimmte Dauer konstant bei Null liegt. Eine ausführlichere Erläuterung finden Sie im <a href="advanced.html#dose-mode">erweiterten Abschnitt</a> dieses Handbuchs.</p>
+<h3 id="math">Mathematik<a class="headerlink" href="#math" title="Permanent link">#</a></h3>
+<p><img align="right" alt="mathunit" src="img/mathunitmenu_pic.png" width="40%" /></p>
+<p>Über das Menü <strong>Mathe und Einheit</strong> können Sie kanalspezifische Einheitenberechnungen einstellen. </p>
+<p>In diesem Menü können Sie auch die Bezeichnung der Einheit ändern, die unter dem Wert angezeigt wird. Um den Wert tatsächlich in andere Einheiten umzurechnen, verwenden Sie die mathematischen Optionen (Faktor und Summand).</p>
+<p>Wenn Sie das Menü "Laden" erweitern, können Sie Ihre mathematischen Voreinstellungen speichern und wiederherstellen sowie Berechnungsfunktionen verwenden:</p>
+<ul>
+<li>
+<p><strong>Speichern in Voreinstellung...:</strong> Speichern Sie den aktuellen Faktor, Summand und die Einheit in einer Voreinstellung mit einem benutzerdefinierten Namen. Es wird empfohlen, einen Namen zu wählen, der Ihnen hilft, diese Voreinstellung später zu unterscheiden, z. B. den Kanaltyp, den Namen des Durchflussmessers, IPF, die Einheit oder die Prüfstandnummer.</p>
+</li>
+<li>
+<p><strong>Voreinstellung laden...:</strong> Laden Sie eine zuvor gespeicherte Voreinstellung. Ein Linksklick zeigt eine Liste aller Voreinstellungen an. Ein Rechtsklick auf eine bestimmte Voreinstellung in dieser Liste zeigt ein Menü mit einer Option zum dauerhaften Löschen der Voreinstellung. </p>
+</li>
+<li>
+<p><strong>Berechnen [...] aus [...]:</strong> Mit dieser Schaltfläche kann der Frequenz-/Zählwert in den entsprechenden Durchfluss-/Volumenwert umgerechnet werden, indem einfach der K-Faktor des Durchflussmessers verwendet wird. </p>
+</li>
+<li>
+<p><strong>Look-up aus der Datenbank...:</strong> Mit dieser Option können Sie einfach den Standard-K-Faktor eines VSE-Durchflussmessers auswählen, wenn Sie den durchschnittlichen/mittleren K-Faktor des spezifischen Geräts nicht kennen. </p>
+</li>
+</ul>
+<p>Im folgenden Video finden Sie eine visuelle Anleitung:</p>
+<video controls="" src="img/mathunitmenu.mp4"> </video>
+
+<p>Mit den Schiebereglern am unteren Rand können Sie die Anzahl der sichtbaren Dezimalstellen (im <a href="uiguide.html#live-value-panel">Live-Wert-Panel</a>) separat für Volumen und Durchfluss ändern. Diese Einstellung hat keinen Einfluss auf die Auflösung der Aufzeichnung oder den internen Wert. </p>
+<h3 id="window">Fenster<a class="headerlink" href="#window" title="Permanent link">#</a></h3>
+<h4 id="sichtbarkeit">Sichtbarkeit<a class="headerlink" href="#sichtbarkeit" title="Permanent link">#</a></h4>
+<p>Über das Fenstermenü können Sie die Sichtbarkeit der folgenden Felder umschalten:</p>
+<ul>
+<li>Live-Wert-Panel (rechts)</li>
+<li>Dateibrowser (links)</li>
+<li>Aufzeichnungsfenster (unten rechts)</li>
+</ul>
+<h4 id="powersave-modus">Powersave-Modus<a class="headerlink" href="#powersave-modus" title="Permanent link">#</a></h4>
+<p><img align="right" alt="powersave" src="img/powersave.png" /></p>
+<p>Der Energiesparmodus wurde implementiert, um die Nutzung von Hardwareressourcen im Leerlauf oder bei Nichtbenutzung zu begrenzen. Wenn das Hauptfenster unscharf wird (z.B. weil ein anderes Programm auf dem PC läuft), kann EasyGraph die Bildwiederholrate drosseln, um Strom zu sparen. Wenn der Energiesparmodus aktiv ist und das Fenster nicht fokussiert ist, wird ein grüner Indikator im oberen Bereich des Live-Grafik-Panels angezeigt. </p>
+<p>Es gibt drei verschiedene Energiesparmodi für den nicht fokussierten Programmzustand. Wenn das Programm fokussiert ist, wird das Rendering immer mit voller Geschwindigkeit ausgeführt. </p>
+<p><img align="right" alt="powersavethrottle" src="img/powersavethrottle.png" /></p>
+<ul>
+<li>Aus: Rendering immer mit voller Geschwindigkeit (0% Energieeinsparung)</li>
+<li>Normal/Drosseln: Framerate auf <em>6 fps</em> senken (~50% Energieeinsparung) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> <code>default</code></li>
+<li>Maximal: Rendering stoppen (~95% Energieeinsparung)</li>
+</ul>
+<div class="admonition erfolg">
+<p class="admonition-title">Bemerkung: Die Aufnahmeleistung wird nicht beeinträchtigt, wenn sie unscharf oder minimiert ist!</p>
+</div>
+<h4 id="fenster-startposition">Fenster Startposition<a class="headerlink" href="#fenster-startposition" title="Permanent link">#</a></h4>
+<p><img align="right" alt="winloc2" src="img/winloc.png" /></p>
+<p>Mit dieser Funktion können Sie die Größe und die Startposition des EasyGraph-Hauptfensters speichern, die bei jedem Programmstart eingestellt wird. Um die aktuelle Position und Größe zu speichern, drücken Sie einfach <code>Speichern</code>. Um die benutzerdefinierte Startposition zu löschen, drücken Sie die Schaltfläche "Löschen". Ist keine eigene Startposition eingestellt (und somit auch keine Schaltfläche "Löschen" sichtbar), startet EasyGraph mittig auf dem Hauptmonitor mit etwas Abstand zu beiden Seiten.</p>
+<p>Sie können die Funktion "Fensterstartposition" z.B. nutzen, um EasyGraph im Vollbildmodus auf einem anderen Monitor zu starten.</p>
+<h3 id="hilfe">Hilfe<a class="headerlink" href="#hilfe" title="Permanent link">#</a></h3>
+<p>Im Menü <strong>Hilfe</strong> finden Sie <em>diese Dokumentation</em> und verschiedene Optionen zur Steuerung des Programmstatus, wie z.B.:</p>
+<ul>
+<li>Option zum Zurücksetzen der mathematischen Voreinstellungen</li>
+<li>Option zum Wiederherstellen des Standard-Fensterlayouts</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
+        
+          
+          <a href="devices.html" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Geräte">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              <div class="md-ellipsis">
+                Geräte
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="advanced.html" class="md-footer__link md-footer__link--next" aria-label="Weiter: Sonderfunktionen">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Weiter
+              </span>
+              <div class="md-ellipsis">
+                Sonderfunktionen
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate", "navigation.expand", "navigation.top", "navigation.footer", "content.tooltips", "content.tabs.link", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
