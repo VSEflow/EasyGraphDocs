@@ -46,5 +46,5 @@ Nach Aktivierung des **Dosiermodus** erscheinen zusätzliche Einstellungen:
 
 **Subtrahieren des letzten Rückzugsvolumens:** Das letzte Rückzugsvolumen wird vom Endvolumen und dem Dosiervolumen abgezogen. Dies kann aktiviert werden, um nur das positive Dosiervolumen zu protokollieren.
 
-!!! Warnung "Dose-Mode Excel-Dateien sind nur für den Export bestimmt"
+!!! warning "Dose-Mode Excel-Dateien sind nur für den Export bestimmt"
     Die im **Dosiermodus** exportierten Excel-Dateien können ***nicht*** wieder in EasyGraph importiert werden. Sie müssen alle weiteren Bearbeitungen und Betrachtungen in Excel vornehmen.

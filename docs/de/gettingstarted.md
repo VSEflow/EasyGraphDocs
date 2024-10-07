@@ -14,7 +14,7 @@ Beim ersten Start der Software sehen Sie den folgenden Bildschirm:
 
 Der erste Schritt nach dem Öffnen der Software ist in der Regel das Verbinden mit einem externen Datenerfassungsgerät. Öffnen Sie dazu das Menü `Gerät` in der oberen Menüleiste und wählen Sie den Gerätetyp aus, den Sie anschließen möchten. Wenn Sie diese Software zum ersten Mal verwenden, müssen Sie einen Lizenzschlüssel eingeben. Dies wird im [nächsten Kapitel](gettingstarted.md#software-activation "Software Activation") erklärt.
 
-!!! Frage "Hilfe: Panel ist nicht sichtbar"
+!!! question "Hilfe: Panel ist nicht sichtbar"
     Sie können Panels immer wieder sichtbar machen, indem Sie das Menü `Fenster` in der oberen Menüleiste verwenden und das Fenster, das Sie wieder aktivieren möchten, ankreuzen.
 
 ## Software-Aktivierung  {id="software-activation"}
@@ -67,7 +67,7 @@ Um eine Geräteverbindung herzustellen, vergewissern Sie sich, dass das Gerät r
 
 Wenn die Verbindung hergestellt ist, reagiert die Benutzeroberfläche auf das angeschlossene Gerät, indem sie die Kontrollleiste oberhalb des Plot-Panels anzeigt. Eine aktive Geräteverbindung wird durch die grüne Schaltfläche [**:material-play: Running** ] angezeigt. Die aktuell gemessenen Werte werden im **Live-Wert-Panel** und im **Live-Graph-Panel** angezeigt. 
 
-!!! Frage "Hilfe: Ich sehe nur Nullwerte"
+!!! question "Hilfe: Ich sehe nur Nullwerte"
     Vergewissern Sie sich, dass Sie Ihre Sensoren mit 24V versorgt haben und dass sie die richtigen Signalpegel (HTL) ausgeben. Wenn Sie log.flow verwenden, lesen Sie [diesen Abschnitt](devices.md#power-supply-configuration), um weitere Informationen über die Stromversorgung Ihrer Sensoren zu erhalten.
 
 ### Plot-Navigation

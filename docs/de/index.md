@@ -66,7 +66,7 @@ Der PC, auf dem die EasyGraph-Software läuft, sollte folgende Mindestanforderun
 
 ## Software-Anforderungen
 
-* .NET Framework 4.7.2 oder höher ([:material-Link: Download](https://dotnet.microsoft.com/en-us/download/dotnet-framework))
+* Microsoft Visual C++ Redistributable 2015-2022 ([:material-link: Direct Download](https://aka.ms/vs/17/release/vc_redist.x64.exe))
 * .NET 6.0 Desktop Runtime ([:material-link: Download](https://dotnet.microsoft.com/en-us/download/dotnet/6.0))
 
 ## Lizenzinformationen

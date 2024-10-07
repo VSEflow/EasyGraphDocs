@@ -43,7 +43,9 @@ Es gibt drei verschiedene Hardware-Versionen von log.flow. Wählen Sie die Regis
     - Eingang 2: Analoger Spannungseingang an Pin 4 (Max. Spannung :material-arrow-right: 0..10 V) 
         - Analoger Wert (:material-arrow-right: Druck, Temperatur,..)
 
-    !!! Gefahr "Vorsicht: 10 V Spannungsgrenze"
+    Wenn Sie einen Sensor an den Analogeingang anschließen, stellen Sie sicher, dass Sie die Pinbelegung stimmt. Wahrscheinlich müssen Sie ein Adapterkabel für Ihren spezifischen Sensor bauen, um die Pinbelegung des Sensordatenblatts an die von log.flow U anzupassen.
+
+    !!! danger "Vorsicht: 10 V Spannungsgrenze"
         Der Anschluss eines HTL-Durchflussmessers oder einer höheren Spannung als 10 V an den Eingangspin von Eingang 2 kann das Gerät beschädigen!
 
     **Diagramm:**
@@ -58,6 +60,11 @@ Es gibt drei verschiedene Hardware-Versionen von log.flow. Wählen Sie die Regis
         - Impulszahl (:material-arrow-right: Volumen)
     - Eingang 2: Analoger Stromeingang an Pin 4 (Max. Strom :material-arrow-right: 20 mA) 
         - Analogwert (:material-arrow-right: Druck, Temperatur,..)
+
+    Wenn Sie einen Sensor an den Analogeingang anschließen, stellen Sie sicher, dass Sie die Pinbelegung stimmt. Wahrscheinlich müssen Sie ein Adapterkabel für Ihren spezifischen Sensor bauen, um die Pinbelegung des Sensordatenblatts an die von log.flow I anzupassen.
+
+    !!! warning "Achtung: Keine T-Stücke mit Stromeingang verwenden"
+        Versuchen Sie nicht, den analogen Sensor einer bestehenden Anlage mit einem T-Stück parallel zum log.flow I anzuschließen, da dies zu einem Kurzschluss führt. Stromsensoren müssen in Reihe geschaltet werden. Intern funktioniert die Strommessung über einen Shunt, der Pin 4 mit GND verbindet. 
 
     !!! info "Info: 20 mA Stromgrenze"
         Der Anschluss eines HTL-Durchflussmessers oder einer niederohmigen Quelle an Eingang 2 sollte vermieden werden. _Log.flow I_ wird den Kurzschluss erkennen und den Eingang deaktivieren. Sie können den ausgelösten Kurzschlussschutz im Gerätemenü von EasyGraph wieder aktivieren.
@@ -119,7 +126,7 @@ Log.flow unterstützt 3 verschiedene Stromversorgungsschemata:
 
 Sie können den Spannungsbooster über das Kontrollkästchen `Power via USB?` im Gerätemenü aktivieren.
 
-!!! Tipp "Tipp: Spannungsbooster schaltet sich bei Nichtgebrauch ab"
+!!! tip "Tipp: Spannungsbooster schaltet sich bei Nichtgebrauch ab"
     Wenn Sie das externe Netzteil einstecken, kommt es zu keinem Kurzschluss, da dieser Zustand automatisch erkannt wird. Der Spannungsbooster wird dann automatisch deaktiviert.
 
 === "log.flow (4881)"
@@ -158,22 +165,22 @@ Die verfügbaren Optionen für die Eingangskonfiguration hängen wiederum vom Ge
 
     **Kanal 2**
 
-    Kanal 2 der _standard log.flow Version_ erweitert die Funktionen von Kanal 1 um eine zusätzliche externe Volumenrückstellfunktion. Sie können zwischen den folgenden Optionen wählen:
+    Kanal 2 der _standard log.flow Version_ erweitert die Funktionen von Kanal 1 um eine zusätzliche externe Lautstärkerückstellfunktion. Sie können zwischen den folgenden Optionen wählen:
 
     ![extreset](img/extreset.png)
 
-    Um diese Funktion zu nutzen, schließen Sie ein digitales 24V-Eingangssignal, einen Schalter/Taster oder etwas Ähnliches an den zweiten Kanal an. Wenn die ausgewählte Bedingung erfüllt ist, wird das Volumen von Kanal 1 zurückgesetzt. 
+    Um diese Funktion zu nutzen, schließen Sie ein digitales 24V-Eingangssignal, einen Schalter/Taster oder etwas Ähnliches an den zweiten Kanal an. Wenn die ausgewählte Bedingung erfüllt ist, wird die Lautstärke von Kanal 1 zurückgesetzt. 
 
     Die flankenempfindlichen Einstellungen setzen den Wert bei einem Pinwechsel zurück. Bei Verwendung dieser Option sollten mechanische Schalter mit einem Tiefpassfilter entprellt werden.
 
-    Die pegelempfindlichen Einstellungen halten den Volumenwert auf Null, solange die Bedingung erfüllt ist.
+    Die pegelempfindlichen Einstellungen halten den Lautstärkewert auf Null, solange die Bedingung erfüllt ist.
 
     !!! tip "Tipp: PNP-Eingang"
         Der einfachste Weg, einen externen Schalter anzuschließen, besteht darin, ihn zwischen die 24V-Leitung und den Eingangspin (2 oder 4) zu schalten. Der log.flow-Eingang verhält sich durch den internen Pulldown-Widerstand wie ein PNP-Eingang.
 
         <Zeichenabschrift>
         ![connectbtn](img/logflow_edge_volreset.svg){ loading=lazy }
-        <figcaption>Beispiel für den Anschluss eines Schalters zur externen Rückstellung des Volumens</figcaption>
+        <figcaption>Beispiel für den Anschluss eines Schalters zur externen Rückstellung der Lautstärke</figcaption>
         </figure>
 
 === "log.flow V (4881/V)"
@@ -300,7 +307,7 @@ Wenn Sie zum ersten Mal eine Verbindung zu Ihrer Auswerteeinheit herstellen, les
 
 Bei Verwendung eines Display/FU-Konverters ist eine automatische Verbindung nicht möglich, da sie von der verwendeten RS232-Schnittstelle abhängt. Wählen Sie den COM-Port aus, der der Schnittstelle entspricht, die für den Anschluss an die Auswerteeinheit verwendet wird.
 
-!!! Frage "Hilfe: Wie finde ich den richtigen COM-Port?"
+!!! question "Hilfe: Wie finde ich den richtigen COM-Port?"
     Um den richtigen COM-Port zu finden, an dem Ihre Auswerteeinheit angeschlossen ist, können Sie den in Windows eingebauten **Gerätemanager** (`devmgmt.msc`) verwenden. Öffnen Sie den Gerätemanager über das Startmenü, öffnen Sie die Kategorie "Ports (COM & LPT)" und achten Sie auf Änderungen, während Sie den USB-RS232-Adapter einstecken. Beim Einstecken des Adapters sollte ein neuer COM-Port erscheinen. Dies ist der Port, den Sie in EasyGraph auswählen (in diesem Fall: **COM42**). Wenn der PC mit einem nativen RS232-Anschluss ausgestattet ist, lautet der Anschlussname normalerweise **COM1**.
 
     ![comlpt](img/comlpt.png)

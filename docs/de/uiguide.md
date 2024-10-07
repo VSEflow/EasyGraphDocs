@@ -92,10 +92,10 @@ Die **Livewerttafel** enthält die aktuellen Werte des Datenloggers. Die Anzahl 
 
 Die **Anzahl der sichtbaren Nachkommastellen** kann für Volumen und Durchfluss im [Math menu](uiguide.md#math) separat eingestellt werden. Diese Einstellung hat keinen Einfluss auf die Aufzeichnungsauflösung oder den internen Wert. In diesem Menü können Sie auch die **Einheitenbezeichnung** ändern, die unter dem Wert angezeigt wird. Um den Wert tatsächlich in andere Einheiten umzurechnen, verwenden Sie die mathematischen Optionen (Faktor und Summand). 
 
-Wenn das log.flow-Gerät angeschlossen ist, verfügt die Volumenanzeige über eine Schaltfläche "Volumen zurücksetzen", mit der das Volumen schnell auf Null zurückgesetzt werden kann.
+Wenn das log.flow-Gerät angeschlossen ist, verfügt die Lautstärkeanzeige über eine Schaltfläche "Lautstärke zurücksetzen", mit der die Lautstärke schnell auf Null zurückgesetzt werden kann.
 
 
-!!! Tipp "Mittlerer Mausklick"
+!!! tip "Mittlerer Mausklick"
     Verstecken/deaktivieren Sie unbenutzte Kanäle schnell, indem Sie mit der mittleren Maustaste darauf klicken. Sie können sie über das [Plot-Menü](uiguide.md#plot) wieder aktivieren. Deaktivierte Kanäle werden aufgezeichnet, auch wenn sie ausgeblendet sind.
 
 #### Cursor-Messung
@@ -108,7 +108,7 @@ Unterhalb der **Live-Werte** finden Sie die Messwerte zwischen den Cursorlinien.
 - Der zweite Abschnitt enthält die Werte der Cursor der Y-Achse, bezogen auf den ausgewählten Kanal. Auch hier wird ihre Differenz angezeigt. 
 - Im dritten Bereich wird eine statistische Auswertung aller Messwerte zwischen den X-Achsen-Cursorn angezeigt. Sie können das Maximum (`yMax`), das Minimum (`yMin`) und den Durchschnitt (`yAvg`) aller dazwischen liegenden Werte sehen.
 
-!!! Warnung "Cursors don't support files atm"
+!!! warning "Cursors don't support files atm"
     Im Moment sind Cursor-Messungen in der Dateiansicht nicht verfügbar. Diese Funktion wird in zukünftigen Versionen hinzugefügt werden.
 
 ![cursors](img/cursors.png)
@@ -147,7 +147,7 @@ und einen Download-Link.
 
 **:octicons-x-12: Beenden:** Schließt die Anwendung.
 
-!!! Fehler "Schließen mit ungespeicherten Aufnahmen"
+!!! warning "Schließen mit ungespeicherten Aufnahmen"
     Wenn Sie die Anwendung mit ungespeicherten Aufnahmen schließen, wird ein Popup-Fenster angezeigt, das Sie auffordert, die Dateien entweder zu speichern oder zu verwerfen. Sie können das Schließen auch abbrechen und die Dateien selbst manuell speichern. 
 
     ![confirmclose](img/confimclose.png)
@@ -201,7 +201,7 @@ Bevor Sie den Trigger über das entsprechende Kontrollkästchen oder über die S
 
 **Aufnahmedauer:** Als nächstes stellen Sie die Aufnahmedauer mit dem Schieberegler ein. Die Gesamtdauer ergibt sich aus der Summe der Aufnahmedauer und der Pre-Trigger-Dauer, die Sie im nächsten Schritt einstellen.
 
-!!! Tipp "Tipp: Benutzerdefinierte Dauer"
+!!! tip "Tipp: Benutzerdefinierte Dauer"
     Sie können eine benutzerdefinierte Dauer in Sekunden einstellen, indem Sie mit der linken Maustaste auf den Schieberegler klicken, während Sie die "STRG"-Taste auf der Tastatur gedrückt halten. So können Sie einen Wert manuell über die Tastatur eingeben. Speichern Sie mit der Taste "Enter". 
 
 **Vor-Trigger-Dauer:** Mit dieser optionalen Funktion können Sie der Aufzeichnung Werte hinzufügen, die vor dem Start des Triggers passiert sind. So können Sie sehen, was im System geschah, bevor die Triggerbedingung eintrat. Nachdem Sie einen Wert ungleich Null eingestellt und den Trigger aktiviert haben, füllt sich der Pre-Trigger-Puffer (= Ringpuffer) mit Samples. Sobald er voll ist, können Sie aufzeichnen!
@@ -278,7 +278,7 @@ Es gibt drei verschiedene Energiesparmodi für den nicht fokussierten Programmzu
 - Normal/Drosseln: Framerate auf _6 fps_ senken (~50% Energieeinsparung) :material-arrow-right: `default`
 - Maximal: Rendering stoppen (~95% Energieeinsparung)
 
-!!! Erfolg "Bemerkung: Die Aufnahmeleistung wird nicht beeinträchtigt, wenn sie unscharf oder minimiert ist!"
+!!! success "Bemerkung: Die Aufnahme wird nicht beeinträchtigt, wenn das Rendering gedrosselt oder das Fenster minimiert ist!"
 
 #### Fenster Startposition
 
@@ -287,6 +287,8 @@ Es gibt drei verschiedene Energiesparmodi für den nicht fokussierten Programmzu
 Mit dieser Funktion können Sie die Größe und die Startposition des EasyGraph-Hauptfensters speichern, die bei jedem Programmstart eingestellt wird. Um die aktuelle Position und Größe zu speichern, drücken Sie einfach `Speichern`. Um die benutzerdefinierte Startposition zu löschen, drücken Sie die Schaltfläche "Löschen". Ist keine eigene Startposition eingestellt (und somit auch keine Schaltfläche "Löschen" sichtbar), startet EasyGraph mittig auf dem Hauptmonitor mit etwas Abstand zu beiden Seiten.
 
 Sie können die Funktion "Fensterstartposition" z.B. nutzen, um EasyGraph im Vollbildmodus auf einem anderen Monitor zu starten.
+
+Wenn das Fenster nach dem Programmstart nicht sichtbar ist, schließen Sie es über das Symbol in der Taskleiste und halten Sie beim nächsten Programmstart die `Umschalt`-Taste gedrückt. Dadurch wird die Startposition auf die Standardeinstellung zurückgesetzt.
 
 ### Hilfe
 
