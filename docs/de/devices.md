@@ -122,12 +122,15 @@ Log.flow unterstützt 3 verschiedene Stromversorgungsschemata:
 
 - Log.flow verfügt über einen internen Spannungsbooster von 5 V auf 24 V, der für die Stromversorgung der Durchflussmessgeräte verwendet werden kann. Wenn die Gesamtstromaufnahme der Durchflussmesser 50 mA überschreitet, sollte ein externes Netzteil verwendet werden, um das log.flow-Gerät nicht zu beschädigen oder zu überhitzen. 
 - Eine andere Möglichkeit ist die Verwendung eines T-Verteiler-M12-Steckers an einem der Anschlüsse des Durchflussmessers, um eine bestehende 24-V-Versorgungsspannung von außen (z. B. von der Testbench) einzuspeisen. Die Spannung wird dann an den anderen Durchflussmesser weitergeleitet.
-- Externe Stromversorgung über die DC-Buchse und das externe 24-V-Netzteil (im Lieferumfang enthalten) für höhere Stromanforderungen
+- Externe Stromversorgung über die DC-Buchse und das externe 24-V-Netzteil (im Lieferumfang enthalten) für höhere Stromanforderungen. Bitte nicht zusammen mit T-Stücken verwenden!
 
 Sie können den Spannungsbooster über das Kontrollkästchen `Power via USB?` im Gerätemenü aktivieren.
 
 !!! tip "Tipp: Spannungsbooster schaltet sich bei Nichtgebrauch ab"
     Wenn Sie das externe Netzteil einstecken, kommt es zu keinem Kurzschluss, da dieser Zustand automatisch erkannt wird. Der Spannungsbooster wird dann automatisch deaktiviert.
+
+!!! danger "Warnung: Ext. Netzteil nicht bei Anlagenspannung verwenden"
+    Vor Anschluss und Verwendung des externen Netzteils sollte, insbesondere bei Verwendung von T-Stücken, sichergestellt werden, dass das Netzteil nicht Spannung in die Anlage zurückspeist bzw. mit dem 24V-Rail der Anlage verbunden wird. Andernfalls wird bei Spannungsabschaltung der Anlage diese über das Netzteil versorgt und dieses überhitzt oder kann sogar zerstört werden. 
 
 === "log.flow (4881)"
 

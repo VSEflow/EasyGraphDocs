@@ -121,13 +121,16 @@ $$
 Log.flow supports 3 different power supply schemes: 
 
 - Log.flow has an internal 5V to 24V voltage booster, which can be used to power the flowmeters. If the total current draw from the flowmeters exceeds 50 mA, an external power supply should be used to not damage or overheat the log.flow device. 
-- Another option is to use a T-junction M12 connector on one of the flowmeter ports to inject a existing 24V supply voltage externally (e.g. from the testbench). The voltage will then be passed through to the other flowmeter.
-- External power via the DC Jack and the external 24 V power supply (included) for higher current demands
+- Another option is to use a M12 T-connector on one of the flowmeter ports to inject a existing 24V supply voltage externally (e.g. from the testbench). The voltage will then be passed through to the other flowmeter.
+- External power via the DC Jack and the external 24 V power supply (included) for higher current demands. Please don't use together with the T-connectors!
 
 You can enable the voltage booster using the checkbox `Power via USB?` in the device menu.
 
 !!! tip "Tip: Voltage booster disables itself when not in use"
     If you plug in the external power supply, there will be no short circuit as this state is automatically detected. The voltage booster will be disabled automatically.
+
+!!! danger "Warning: Don't use external power supply with testbench power!"
+    Before connecting and using the included external power supply, especially when using T-connectors, it should be ensured that the power supply does not feed voltage back into the system or is connected to the 24V rail of the testbench. Otherwise, if the testbench is switched off, it will be supplied via the power supply, which may overheat or even be destroyed.
 
 === "log.flow (4881)"
 
