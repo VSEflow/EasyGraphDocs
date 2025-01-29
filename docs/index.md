@@ -48,23 +48,23 @@ This documentation is structured into the following main chapters:
 * [Troubleshooting](faqs.md) shows how to solve the commonly asked questions and problems
 
 
-
 ## Hardware requirements
 
 The PC running the EasyGraph software should meet the following minimum hardware requirements:
 
 * 2 GHz processor (x64) or faster
 * 64-bit Windows installation
-* 4GB RAM or more
+* 8GB RAM or more
 * Graphics card or iGPU with DirectX11 support
-* 200 MB free hard disk space
-* Screen resolution: at least 1440x900 px
+* 300 MB free hard disk space
+* Screen resolution: recommended 1920 ⋅ 1080px with DPI scaling of 100%
 * USB 2.0 interface or better (USB 3.0 port for max. current capability)
 * Optional internet connection for update check
 
 ## Software requirements
 
 * Microsoft Visual C++ Redistributable 2015-2022 ([:material-link: Direct Download](https://aka.ms/vs/17/release/vc_redist.x64.exe))
+* .NET Framework v4.7.2 ([:material-link: Download](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472))
 * .NET 6.0 Desktop Runtime ([:material-link: Download](https://dotnet.microsoft.com/en-us/download/dotnet/6.0))
 
 ## License info

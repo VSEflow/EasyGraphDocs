@@ -1,5 +1,7 @@
 ## Panels
 
+![mainwin](img/main_new2.png "Main EasyGraph window with panels")
+
 The software's user interface is based on panels in a main window. By default, the main window consists of the big [**Live graph panel**](uiguide.md#live-graph-panel) and a [**Live value panel**](uiguide.md#live-value-panel) on the right, but additional windows can be toggled using the [Window menu](uiguide.md#window). You can drag the panels out of the window by dragging on the title bar of each panel and dropping them. To re-dock them, press and hold the `SHIFT` key while dragging and use the overlay to position it. 
 
 Previously saved recordings open up as tabs of the [**Live graph panel**](uiguide.md#live-graph-panel). You can identify them by the `File:` prefix in the title bar.
@@ -8,7 +10,7 @@ Previously saved recordings open up as tabs of the [**Live graph panel**](uiguid
 
 #### Plot navigation
 
-The plot window shows an XY-Plot of the measured data. While the X-Axis refers to the time, the Y-Axis refers to the actual value. There may be two seperate Y-Axes on the left and right of the plot. This is done to seperately control the different dimensions of flowrate and volume. 
+The plot window shows an XY-Plot of the measured data. While the X-Axis refers to the time, the Y-Axis refers to the actual value. There may be multiple seperate Y-Axes on the left and right side of the plot. This is useful to seperately display the different units of flowrate, volume and analog values. 
 
 !!! info inline end "Hint: This applies to both the live plot and the file viewer"
 
@@ -26,11 +28,13 @@ Refer to the following video:
 
 #### Controls
 
+![ctrl](img/controls.png "Controls of the live graph panel")
+
 - **Running/Pause button:** Start or pause the incoming data stream. All samples during a pause will be discarded. Alternatively you can disable the Auto-Scroll feature (see below) to visually pause the plot while still keeping the data stream running.
 
-- **Trigger button:** Enables or disables the trigger functionality that can be configured using the [data logging menu](uiguide.md#data-logging). This will start a recording automatically if a certain condition is met.
+- **Trigger button:** Enables or disables the trigger functionality that can be configured using the [trigger menu](uiguide.md#trigger-menu) which can be opened by right-clicking this button. The trigger functionality will start a recording automatically if a certain condition is met.
 
-- **Record button:** Manually start or stop a recording. Active/finished recordings will be shown in the [recordings panel](uiguide.md#recordings-panel).
+- **Record button:** Manually start or stop a recording. Optionally use a right-click to customize the filename before starting the recording. Active/finished recordings will be shown in the [recordings panel](uiguide.md#recordings-panel).
 
 - **Clear button:** Clear all historic data in the live graph panel. This leaves you with an empty plot window.
 
@@ -38,31 +42,30 @@ Refer to the following video:
 
 - **Auto-Scale Feature:** The Auto-Scale feature will automatically adjust the Y-Axes according to the visible data in the plot. It is also dependent on the selected history time. The feature can sometimes be distracting (for very small value changes) and you should consider turning it off and manually setting the expected Y-Ranges using the scroll wheel and dragging.
 
-- **Lock-Min Feature:** The Lock-Min feature will lock/fix the current minimum value (e.g. `0`) of the flow axis. This option can be used in combination with the **Auto-Scale** feature to allow the maximum value to scale automatically while keeping the X-Axis in view and to not automatically zoom in too much. 
+- **Lock-Min Feature:** The Lock-Min feature will lock/fix the current minimum value (e.g. `0`) of the flow axis. This option can be used in combination with the **Auto-Scale** feature to allow the maximum value to scale automatically while keeping the X-Axis in view and to not automatically zoom in too much. It is disabled by default. 
 
 - **History slider:** The selected time on the history slider will set the visible range of the plot. It controls how long you can look into the past. In case you use log.flow and have set the [sample rate setting](devices.md#measurement-configuration) to `Automatic`, the history time will also (inversely proportional) affect the sample rate.
 
 #### Limits
 
-To keep the RAM usage of the software moderate and the performance high, the maximum number of samples shown in the plot is limited. Therefore the visible samples will be removed if they exceed a buffer size of 524288 samples. Please note that recordings are not affected by this limit as the memory is allocated dynamically (as long as there is enough free RAM).
+To keep the RAM usage of the software moderate and the performance high, the maximum number of samples shown in the plot is limited. Therefore the visible samples will be removed if they exceed a buffer size of 2^19 (524288) samples. Please note that recordings are not affected by this limit as the memory is allocated dynamically (as long as there is enough free RAM).
 
 If you plan to take long recordings, it is therefore advisable to reduce the sample rate of the connected device.
 
 ### Recordings panel
 
-![fileinfo](img/fileinfo.png){ align=right}
+![fileinfo](img/recctx.png){ align=right}
 
 The recordings panel lists all active, finished and imported recordings. Fresh recordings only persist in temporary RAM and you have to [export](uiguide.md#filetypes-importexport) them in order to keep them after the program exits. You will see different icons besides the filename to show different states of the file:
 
 - :fontawesome-solid-tape:: File is currently recording
 - :material-content-save:: File is unsaved and needs saving
 - :octicons-check-16:: File was saved successfully.
-- :fontawesome-solid-syringe:: File was created using [Dose-Mode](advanced.md#dose-mode)
 
-To manage a recording, right click on the list item. A windows pops up that contains all file metadata. You can simply edit the fields. After editing you will need to re-save the file as it is not automatically updated on your HDD.
+To manage a recording, right click on the list item. You can open or close the file and also open its property panel where all of the metadata of this file is shown. You can simply edit the fields. After editing you will need to re-save the file as it is not automatically updated on your hard disk.
 
 !!! info "Hint: Close file to edit name"
-    To edit a file's name, you will need to close the file's tab if it is open in the live plot panel.
+    To edit a file's name, you will need to close the file's tab if it is open.
 
 #### Filetypes + Import/Export
 
@@ -71,61 +74,61 @@ There are four different import/export file types available:
 File type | File extension | Advantages | Disadvantages | Recommended
 --- | --- | --- | --- | ---
 [Protocol Buffers :material-link:](https://protobuf.dev/) | pb.bin  | Fastest, small size | Not portable to other programs | :octicons-check-16:
-Excel Sheet | xlsx | Widely supported filetype, Excel graphs | Very slow, row limits, RAM usage high | |
+Excel Sheet | xlsx | Widely supported filetype, Excel graphs | Very slow, row limits, RAM usage high, No reimport | |
 XML file | xml | Fast, Readable format | Very verbose and huge filesize | |
-PDF file | pdf | Looks good, fast to create report | No actual data, only image of plot | :octicons-check-16: 
-
-!!! warning "Excel sheet modifications"
-    When importing an Excel sheet that was previously exported using EasyGraph, user modifications such as custom graphs or missing rows may cause the file to not open properly or the program to crash.
+PDF file | pdf | Looks good, fast to create report | No actual data, only image of plot, No reimport | :octicons-check-16: 
 
 ##### PDF report
 
 This is what the exported PDF report looks like:
 
-![pdfreport](img/pdfreport.svg){width=50%}
+![pdfreport](img/2K%20Multispeed%20Test_1.webp){width=50%}
+![pdfreport](img/2K%20Multispeed%20Test_2.webp){width=70%}
+![pdfreport](img/2K%20Multispeed%20Test_3.webp){width=70%}
 
 ### Live value panel
 
 ![livevals](img/livevalues.png){ align=right}
 
-The **live value panel** contains the current values from the datalogging device. The number of visible channels depends on the connected device (:material-arrow-right: it's channel capability) and if the channel is set to ***visible*** in the [Plot menu](uiguide.md#plot). The channel names are automatically adapted to the connected device. 
+The **live value panel** contains the current values from the datalogging device. The number of visible channels depends on the selected channels in the `Device management` panel. The plotted channels can be composed of multiple devices. The channel names are automatically adapted to the connected device. 
 
-You can change the **number of visible decimal places** seperately for Volume and Flow in the [Math menu](uiguide.md#math). This setting does not affect the recoding resolution or internal value. In this menu you can also change the **unit label** that is shown below the value. To actually convert the value to other units, use the math options (factor and summand). 
+You can change the **number of visible decimal places** seperately for Volume and Flow in the [Settings menu](uiguide.md#settings-menu). This setting does not affect the recoding resolution or internal value. 
 
-With the log.flow device connected, the volume display will have a `Reset Volume` button to quickly set the Volume back to zero.
+For all channels that display a volume, the value display will have a `Reset Volume` button to quickly set the volume back to zero.
 
+If you have a small screen or a lot of channels active simultaneously, you can use the `Compact` checkbox in the top right corner to make the value display smaller.
+
+![livevals](img/compact.png)
 
 !!! tip "Middle Mouse Click"
     Quickly hide/disable unused channels by clicking on them with the middle mouse button. You can re-enable them via the [plot menu](uiguide.md#plot). Disabled channels will be recorded even when they are hidden.
 
 #### Cursor measurement
 
-Cursor measurement can be enabled either by using the `Enable cursor measurement` button below the live values or by checking on the option in the [Plot menu](uiguide.md#plot). Once activated, it makes sense to disable the [Auto-Scroll and AutoScale](uiguide.md#controls) functions or stopping the datastream using the [Running/Pause button](uiguide.md#controls). After enabling, movable cursors appear in the live plot window. You can move them by left clicking and dragging the lines or their little rectangle handles at the plot's edges. 
+Cursor measurement can be enabled either by using the `Measure` button in the live graph or file graph panel. Once activated, the [Auto-Scroll and AutoScale](uiguide.md#controls) functions are disabled automatically. After enabling, movable cursors appear in the live plot window. You can move them by left clicking and dragging the lines or their little rectangle handles at the plot's edges. 
 
-Below the **live values** you will find the measured values between the cursor lines. Here you can also select the channel, that you want to measure on, using the combo box. The time values are indepentent of the axes. The measurement is grouped into three sections: 
+Below the **live values** in the rightmost panel, you will find the measured values between the cursor lines. Here you can also select the channel, that you want to measure on, using the combo box. The time values are indepentent of the axes. The measurement is grouped into three sections: 
 
 - In the first section the time values at the X-Axis cursors are shown together with the difference (`delta`) between them. 
 - The second section contains the values of the Y-Axis cursors based on the selected channel. Their difference is also shown here. 
-- The third section will display a statistical evaluation of all measured values between the X-Axis cursors. You can see the maximum (`yMax`), minimum (`yMin`) and average (`yAvg`) of all values in-between.
-
-!!! warning "Cursors don't support files atm"
-    At the moment, cursor measurements are not available in file view. This feature will be added in future releases.
+- The third section will display a statistical evaluation of all measured values between the X-Axis cursors. You can see the maximum, minimum, difference and average of all values in-between.
 
 ![cursors](img/cursors.png)
 
 ### File browser panel
 
-You can show the **file browser panel** by enabling the option in the main menu bar using `Window` :material-arrow-right: `Show File Browser`. This will display an explorer-like file browser on the left side of the plot window. 
+You can show the **file browser panel** by enabling the option in the main menu bar using `File` :material-arrow-right: `Open via File Browser`. This will display an explorer-like file browser to open files. Using `Open` you can use the windows default file browser.
 
 In the topmost layer the file browser will list all attached harddrives and network drives. Additionally commonly used directories such as `Desktop`,  `User` and `Documents` will be shown. 
 
-While directories are always shown, files are only shown if the filetype is compatible with **EasyGraph**. Supported file extensions are: `pb.bin`, ``xlsx` and `xml`. Import files (recordings) by double clicking on them. The program will then scan the file and verify, that it is compatible. If all checks pass, the file will be shown in the [Recordings panel](uiguide.md#recordings-panel).
+While directories are always shown, files are only shown if the filetype is compatible with **EasyGraph**. Supported file extensions are: `pb.bin` and `xml`. Import files (recordings) by double clicking on them. The program will then scan the file and verify, that it is compatible. If all checks pass, the file will be shown in the [Recordings panel](uiguide.md#recordings-panel).
 
 ![navbuttons](img/navbtn_content.png)
 
 You can use the buttons at the top to perform certain actions:
 
 - :material-refresh: **Refresh:** Reload the current directory and re-list all files
+- :material-home: **Home:** Go to `Computer` (home directory)
 - :material-undo: **Up:** Go up one directory layer until you reach the topmost layer with all drives and shortcuts
 
 ## Main menu bar
@@ -136,14 +139,25 @@ This section will go over every option in the main menu bar.
 
 ![filemenu](img/filemenu.png){align=right}
 
-**:material-folder: Open:** Use the explorer to select a recording that you want to re-import. Supported filetypes are `pb.bin`, `xlsx` and `xml`.
+**:material-folder: Open:** Use the explorer to select a recording that you want to re-import. Supported filetypes are `pb.bin` and `xml`.
 
-**:fontawesome-regular-window-maximize: Show File Browser:** Use the integrated [file browser panel](uiguide.md#file-browser-panel) to find recordings to re-import. 
+**:material-folder: Open via file browser:** Use the integrated file manager to select a recording that you want to re-import. Supported filetypes are `pb.bin` and `xml`.
 
 **:fontawesome-solid-floppy-disk: Save all unsaved recordings:** Opens an explorer window to select the directory you want to save all unsaved recordings into. This does ***not*** check for existing files so it is advised to choose an empty directory.
 
-**:material-download: Check for updates:** Starts the update checker. This will require a working internet connection. If a new version is available, you will be shown more information about new features 
-and a download link. 
+---
+
+**:octicons-x-16: Close:**: Closes the open file plot tab.
+
+**:octicons-x-16: Discard:**: Removes the open file plot from the recording list, effectively deleting it. If the file is already saved, this will only remove the file from the application (closing it), the real file on the HDD remains untouched.
+
+**:fontawesome-solid-floppy-disk: Save:**: Saves the file as a protobuf file at the last known file save location (or where is was imported from)
+
+**:fontawesome-solid-floppy-disk: Save as...:**: Saves the file as a selectable filetype. See [filetypes](uiguide.html#filetypes-importexport) for more information.
+
+**:octicons-info-16: Properties**: Shows the metadata of the open plot file.
+
+---
 
 **:octicons-x-12: Exit:** Closes the application.
 
@@ -157,26 +171,16 @@ and a download link.
     - **Save:** Save all unsaved recordings into a directory and close after this
 
 
+### License
 
-#### Update Check
+Using the license menu you can manage all of your serial keys. Use the relevant menu item to manage them.
 
-On each program start the software will check for software updates. Updates can contain new features, more device support, bugfixes and stability improvements. If a new update is available, a window will be shown with information about the changes and a link to the download page. 
-
-![update](img/update.png)
-
-The update (`msi` file) must be installed manually. You will be redirected to our download portal where you will need to enter your customer id and the product/license key.
-
-You can also invoke the update checker manually by clicking on the version number in the top right corner or using the [File menu](uiguide.md#file).
-
-### Device
-
-The device menu manages the connection to a datalogging device and its settings. 
-
-As the description is highly device dependent and extensive, it has been put into its own section. Check out the [:material-link: Devices](devices.md) chapter!
+- Manage log.flow keys for [log.flow activation](gettingstarted.html#logflow-activation)
+- Manage EasyGraph key for [online activation](gettingstarted.md#online-activation) 
 
 ### Plot
 
-![plot](img/plotmenu.png){align=right}
+![plot](img/settingsmenu.png){align=right}
 
 The plot menu contains options to customize the appearance of the plot window:
 
@@ -225,9 +229,6 @@ The conditions itself are simple comparisons that you can configure using dropdo
 |  | < | smaller than |   |
 |  | <= | smaller or equal than |   |
 
-#### Dosing mode
-
-Dosing mode is designed for volume measurement of dosing shots. The volume value is automatically reset if the flowrate is steady and at zero for a certain duration. You can find a more in-depth explaination in the [advanced section](advanced.md#dose-mode) of this manual.
 
 ### Math
 
@@ -291,7 +292,19 @@ If the window is not visible after program start, close it using its taskbar ico
 
 ### Help
 
-In the **Help** menu you can find _this documentation_ and several options to control the program state, such as:
+In the **Help** menu you can find helpful options, such as:
 
+- Open this documentation
+- Search for software updates (:material-earth: Internet Access required!)
 - Option to reset math presets
 - Option to restore the default window layout
+
+#### Update Check
+
+On each program start the software will check for software updates. Updates can contain new features, more device support, bugfixes and stability improvements. If a new update is available, a window will be shown with information about the changes and a link to the download page. 
+
+![update](img/update.png)
+
+The update (`msi` file) must be installed manually. You will be redirected to our download portal where you will need to enter your customer id and the product/license key.
+
+You can also invoke the update checker manually by clicking on the version number in the top right corner or using the [Help menu](uiguide.md#help).

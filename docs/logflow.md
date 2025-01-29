@@ -1,5 +1,8 @@
 # Log.flow
 
+!!! info "Connection and usage description"
+    You can find all of the connection diagrams and a description how to use log.flow with EasyGraph [in the Devices tab](devices.html#logflow-datalogging-system). This section is for technical data.
+
 ## :material-package-variant: Box contents
 
 > Order no. for  <img src="img/logflow.svg" alt="drawing" width="40"/> (Dual Frequency input): 4881
@@ -33,7 +36,6 @@ Weight | 140 g
 **Parameter** | **Value**
 --- | ---
 Supply voltage DC power port | 24 V DC nominal (18-26 V DC)
-Idle current | ~ _tbd_ mA
 Maximum current draw (DC power/external) | Dependent on power supply
 Maximum current draw (boost converter) | 50 mA (@24 V) total
 Maximum recommended input frequency | ≤ 250 kHz
@@ -41,3 +43,5 @@ Maximum measurable input frequency | ~ 1-2 MHz
 Maximum USB sample rate | 1000 Hz
 Frequency measurement accuracy/error | ≤ 0,005%
 
+
+<!-- Idle current | ~ _tbd_ mA -->

@@ -6,8 +6,9 @@ Quickly jump to the relevant section:
 
 :material-arrow-right: [Display/FU converter](devices.md#displayfu-converter-rs232)
 
+<!--
 :material-arrow-right: [esi pressure sensor](devices.md#esi-usb-pressure-sensor)
-
+-->
 
 ## Log.flow datalogging system
 
@@ -85,7 +86,7 @@ If you are connecting to your log.flow device for the first time, refer to the c
 
 ##### :fontawesome-solid-gear: Measurement configuration
 
-Using the following settings, the measurement characteristics of log.flow can be customized. All changes in settings take effect immediately. To keep the settings between multiple sessions/connections, use the `Save to EEPROM` button to write the current settings permanently to the log.flow device.
+pen the **Device settings** by right-clicking on the connected log.flow device in the device management panel. Using the following settings, the measurement characteristics of log.flow can be customized. All changes in settings take effect immediately. To keep the settings between multiple sessions/connections, use the `Save to EEPROM` button to write the current settings permanently to the log.flow device.
 
 **:material-timer: Sample rate**: By default, the sample rate will be calculated dynamically based on the set history time of the plot (Mode: `Automatic`). This makes sure, that you don't record at an incredibly high samplerate during a long-time recording. Using the `Manual` mode, you can set the sample rate indepentently to a value between 1 Hz and ~1000 Hz (max.).
 
@@ -316,13 +317,15 @@ Automatic connection not possible when using a display/FU converter because it d
 
     ![comlpt](img/comlpt.png)
 
-Some devices will show a yellow `Waiting for cooldown..` message in place of the green [**:material-play: Running** ] button. This is a fixed time that the device needs after initiating a connection before it starts the sending the live values. Unfortunately this cannot be changed. After waiting the cooldown time, the values should start showing up and the plot will be active.
+Some devices will not immediately stream in data after connection. This is due to a serial cooldown delay that the connection line has to be idle before it starts sending the live values. This cooldown time is shown in the device settings that you can view using a right-click on the device. Unfortunately this cannot be changed. After waiting the cooldown time, the values should start showing up and the plot will be active.
 
 #### Performance
 
 **:material-timer: Data rate**: For evaluation units, the datarate is fixed and will be set to the highest possible setting. 
 
-There are no additional settings to configure. To change the parametrization, you will need to disconnect EasyGraph and use the [EasyLoader or OS10.0](https://www.vse-flow.com/downloads.html "vse-flow.com/downloads").
+There are no additional settings to configure. To change the parametrization, you will need to disconnect EasyGraph and use the [:material-link: EasyLoader or OS10.0](https://www.vse-flow.com/downloads.html "vse-flow.com/downloads").
+
+<!--
 
 ## esi USB pressure sensor
 
@@ -383,3 +386,5 @@ km cm² |
 kPa | 
 
 Additionally, information on the connected sensor is displayed, e.g. serial number, sensor range and the last calibration date.
+
+-->
