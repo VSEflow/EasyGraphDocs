@@ -36,8 +36,6 @@ Neben dem [log.flow](devices.md#logflow-datalogging-system) sind auch andere Ger
 
 - [Display/FU-Wandler](devices.md#displayfu-wandler-rs232) (A341/A350/FU210)
 
-- [esi-Drucksensoren](devices.md#esi-usb-pressure-sensor)
-
 ## Struktur { data-search-exclude }
 
 Diese Dokumentation gliedert sich in die folgenden Hauptkapitel:
@@ -45,7 +43,6 @@ Diese Dokumentation gliedert sich in die folgenden Hauptkapitel:
 * [Erste Schritte](gettingstarted.md) für Anweisungen zur Einrichtung/Aktivierung und zum Starten einer Aufzeichnung
 * [Unterstützte Geräte](devices.md) beschreibt, wie die verschiedenen Hardware-Geräte angeschlossen werden 
 * [Benutzeroberfläche](uiguide.md) zeigt, wie die einzelnen Softwarekomponenten funktionieren
-* [Sonderfunktionen](advanced.md) zeigt Beispiele für fortgeschrittene Anwendungen 
 * [Log.flow](logflow.md) erklärt die Hardware-Funktionen und Spezifikationen des log.flow-Geräts
 * [Fehlerbehebung](faqs.md) zeigt, wie man häufig gestellte Fragen und Probleme lösen kann
 

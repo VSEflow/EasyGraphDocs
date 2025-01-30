@@ -57,7 +57,6 @@ Das Aufnahme-Panel listet alle aktiven, beendeten und importierten Aufnahmen auf
 - :fontawesome-solid-tape:: Datei wird gerade aufgezeichnet
 - :material-content-save:: Die Datei ist ungespeichert und muss gespeichert werden
 - :octicons-check-16:: Datei wurde erfolgreich gespeichert.
-- :fontawesome-solid-syringe:: Datei wurde mit [Dose-Mode] erstellt (advanced.md#dose-mode)
 
 Um eine Aufnahme zu verwalten, klicken Sie mit der rechten Maustaste auf den Listeneintrag. Es öffnet sich ein Fenster, das alle Metadaten der Datei enthält. Sie können die Felder einfach bearbeiten. Nach der Bearbeitung müssen Sie die Datei erneut speichern, da sie nicht automatisch auf Ihrer Festplatte aktualisiert wird.
 
@@ -225,10 +224,6 @@ Die Bedingungen selbst sind einfache Vergleiche, die Sie über Dropdown-Menüs k
 | Volumen 2 | >= | größer oder gleich | |
 | | < | kleiner als | |
 | | <= | kleiner oder gleich | |
-
-#### Dosiermodus
-
-Der Dosiermodus ist für die Volumenmessung von Dosierschüssen vorgesehen. Der Volumenwert wird automatisch zurückgesetzt, wenn die Durchflussrate für eine bestimmte Dauer konstant bei Null liegt. Eine ausführlichere Erläuterung finden Sie im [erweiterten Abschnitt](advanced.md#dose-mode) dieses Handbuchs.
 
 ### Mathematik  {id="math"}
 

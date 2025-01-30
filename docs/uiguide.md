@@ -2,9 +2,9 @@
 
 ![mainwin](img/main_new2.png "Main EasyGraph window with panels")
 
-The software's user interface is based on panels in a main window. By default, the main window consists of the big [**Live graph panel**](uiguide.md#live-graph-panel) and a [**Live value panel**](uiguide.md#live-value-panel) on the right, but additional windows can be toggled using the [Window menu](uiguide.md#window). You can drag the panels out of the window by dragging on the title bar of each panel and dropping them. To re-dock them, press and hold the `SHIFT` key while dragging and use the overlay to position it. 
+The software's user interface is based on panels in a main window. By default, the main window consists of the big [**Live graph panel**](uiguide.md#live-graph-panel) in the middle, the [**device management panel**](#device-management-panel) on the left and a [**Live value panel**](uiguide.md#live-value-panel) on the right, but additional windows can be toggled using the [Window menu](uiguide.md#window). You can drag the panels out of the window by dragging on the title bar of each panel and dropping them. To re-dock them, press and hold the `SHIFT` key while dragging and use the overlay to position it. 
 
-Previously saved recordings open up as tabs of the [**Live graph panel**](uiguide.md#live-graph-panel). You can identify them by the `File:` prefix in the title bar.
+Previously saved recordings are shown in the [**recordings panel**](uiguide.md#recordings-panel) and open up as tabs of the [**Live graph panel**](uiguide.md#live-graph-panel). You can identify them by the `File:` prefix in the title bar.
 
 ### Live graph panel
 
@@ -24,7 +24,7 @@ Use your mouse to navigate the plot window:
 
 Refer to the following video:
 
-<video controls autoplay loop src="img/ui_easygraph.mp4"> </video> 
+<video controls autoplay loop src="img/ui_easygraph.mp4" style="border-radius: 20px;"> </video> 
 
 #### Controls
 
@@ -52,6 +52,98 @@ To keep the RAM usage of the software moderate and the performance high, the max
 
 If you plan to take long recordings, it is therefore advisable to reduce the sample rate of the connected device.
 
+#### Trigger Menu
+
+![dataloggermenu](img/datalogmenu.png){align=right}
+
+The **Trigger** context menu contains options about the trigger functionality. Open it by right-clicking in the `Trigger` button. The trigger can automatically start and stop a recording if one or multiple predefined condiditions are true. 
+
+Before enabling the trigger using the `Enable Trigger` checkbox or by pressing the `Trigger` button [in the live graph panel](uiguide.md#controls), configure the trigger options below. You can optionally turn on a notification sound that plays through the speakers when the trigger starts or stops the recording (Checkbox `Play sound on trigger`).
+
+**Trigger mode:** First you need to specify the trigger mode. This influences whether the trigger functionality will be disabled after the first successful trigger (`OneShot`) or stay active for subsequent triggers (`Repeating`/`Continuous`).
+
+- **Repeating:** Retrigger when condition turns false and true again
+- **Continuous:** Retriggers while condition is true
+
+**Recording duration:** Next you set the recording duration using the slider. The total duration is the sum of the recording duration and the pre-trigger duration that you set in the next step.
+
+!!! tip "Tip: Custom duration"
+    You can set a custom duration in seconds by performing a left mouse click on the slider while holding down the `CTRL` key on the keyboard. This allows you to manually enter a value using the keyboard. Save by pressing `Enter`. 
+
+**Pre-Trigger duration:** This optional feature allows you to add values to the recording that happened before the trigger started. This gives you the chance to see what happened in the system before the trigger condition became true. After setting a non-zero value and enabling the trigger, the pre-trigger buffer (= ring buffer) will fill up will samples. Once full, you are ready to record!
+
+**TRIGGER CONDITIONS**
+
+The trigger will fire the configured condition is true. The condition itself is a simple mathematical comparison that you can configure using a dropdown menu. The available options are layed out in the following table:
+
+| Comparator 1 | Operators | Operator description | Comparator 2 |
+| --- | --- | --- | --- |
+| Live Value | =  | equal to | Entered value |
+| Live Value | != | not equal to | Entered value |
+| Live Value | > | greater than |Entered value   |
+| Live Value | >= | greater or equal than | Entered value  |
+| Live Value | < | smaller than | Entered value  |
+| Live Value | <= | smaller or equal than | Entered value  |
+
+Change the trigger comparator value by entering your threshold into the input field. Alternatively you can adjust the trigger value in the live graph panel by dragging the line that says `Trigger`. For this you can enable to show the trigger cursor without enabling the trigger itself using the option `Show Trigger Cursor` to manually adjust the value and see where it is compared to the current live plot data.
+
+![triggerline](img/triggercursor.png "Drag here to adjust trigger comparator value")
+
+### Device Management Panel
+
+Use the **device management panel** to establish a connection to a datalogging device. Before attempting to connect to a device, make sure you [added the necessary serial keys](gettingstarted.md#software-activation).
+
+Depending on the device type, it either can be automatically connected or manually:
+
+- To connect to a log.flow datalogger or an USB-IO-Link master for IO.flow®, use the `Auto-Connect` button. 
+- To connect to an evaluation unit (display or FU-converter) via an USB-RS232-Adapter, use the `More` button and choose the matching COM-Port
+
+!!! success "Make sure the device is connected properly to the computer and turned on"
+
+| ![connectbtn](img/connectbtn.png){ loading=lazy } | ![manual](img/manualconn.png){ loading=lazy } |
+|---|---|
+| `Auto-Connect` button | `More` button for manual connection |
+
+When the connection is established, it will be added to the device list below the `Auto-Connect` button. An active device connection is indicated by the red device entry. The currently measured values will be shown in the **Live value panel** and the **Live graph panel**. 
+
+You can add multiple devices at the same time to record or display them together in the live plot. By right clicking on the device entry you can launch the device specific settings panel in order to change some settings or to disconnect/remove the device. Refer to the relevant [device section of this manual](devices.md) for more information.
+
+![devmulti](img/devmulti.png "Device manager with multiple devices connected"){ loading=lazy } 
+
+
+??? info "Info: What are the gray device menu entries?"
+    If there is a gray device menu entry, this means that the connection of the device has been lost for whatever reason (for example disconnecting the USB cable). Right-Click and remove the device from the list in this case.
+
+
+#### Channel Settings
+
+![chentry](img/channelentry.png){ loading=lazy }
+
+Below each device you will find all available data channels. By default, all channels will automatically be added to the live plot. You can toggle them by clicking on each entry. The arrow icon (:octicons-arrow-right-16:) means that the channel was added to the live plot, a minus icon (:material-minus:) means that it is disabled. Instead of clicking you can also drag-drop the channels into the plot window.
+
+Next to the channel name you will find the following channel options: 
+
+- **Change plot axis:** You can manually select the Y-Axis the data will be referenced to. This is useful to seperate data with different units (e.g. l/min and Hz).
+- **Modify plot color:** Select the color in which this plot is drawn. 
+- **Edit channel description:** Change the channel text and unit. Here you will only change the **unit label** that is shown below the value. To actually convert the value to other units, use the [math settings](#math-settings) (factor and summand). 
+- **Math settings:** Set a custom summand and factor to modify the incoming value mathematically before plotting/recording it.
+
+##### Math settings
+
+![mathunit](img/mathunitmenu_pic.png){align=right width=40%}
+
+Using the **Math settings** you can set channel specific unit calculations. 
+
+If you expand the `Load..` menu, you can save/restore your math presets and use calculation functions:
+
+- **Save to preset..:** Save the current factor, summand and unit to a preset with a user-definable name. It is recommended that you choose a name that helps you differentiate this preset later, e.g. include the channel type, flowmeter name, IPF, unit or testbench no.
+
+- **Load preset..:** Load a previously saved preset. Left-click shows a list of all presets. Right-click on a specific preset in this list shows a menu with an option to permanently delete the preset. 
+
+- **Calculate [...] from [...]:** Using this button, the frequency/count value can be converted into the corresponding flowrate/volume value just by using the K-Factor of the flowmeter. 
+
+- **Look-up from database..:** Using this option, you can easily choose a VSE flowmeter's default K-Factor if you don't know the average/mean K-Factor of the specific device. 
+
 ### Recordings panel
 
 ![fileinfo](img/recctx.png){ align=right}
@@ -61,11 +153,14 @@ The recordings panel lists all active, finished and imported recordings. Fresh r
 - :fontawesome-solid-tape:: File is currently recording
 - :material-content-save:: File is unsaved and needs saving
 - :octicons-check-16:: File was saved successfully.
+- :fontawesome-solid-clock-rotate-left:: Dataset was imported from old filetype [pre-v2.2 .bin file]
 
 To manage a recording, right click on the list item. You can open or close the file and also open its property panel where all of the metadata of this file is shown. You can simply edit the fields. After editing you will need to re-save the file as it is not automatically updated on your hard disk.
 
 !!! info "Hint: Close file to edit name"
     To edit a file's name, you will need to close the file's tab if it is open.
+
+![prop](img/proppanel.png "Example of a property panel")
 
 #### Filetypes + Import/Export
 
@@ -92,7 +187,7 @@ This is what the exported PDF report looks like:
 
 The **live value panel** contains the current values from the datalogging device. The number of visible channels depends on the selected channels in the `Device management` panel. The plotted channels can be composed of multiple devices. The channel names are automatically adapted to the connected device. 
 
-You can change the **number of visible decimal places** seperately for Volume and Flow in the [Settings menu](uiguide.md#settings-menu). This setting does not affect the recoding resolution or internal value. 
+You can change the **number of visible decimal places** seperately for Volume and Flow in the [Settings menu](uiguide.md#settings). This setting does not affect the recoding resolution or internal value. 
 
 For all channels that display a volume, the value display will have a `Reset Volume` button to quickly set the volume back to zero.
 
@@ -101,7 +196,7 @@ If you have a small screen or a lot of channels active simultaneously, you can u
 ![livevals](img/compact.png)
 
 !!! tip "Middle Mouse Click"
-    Quickly hide/disable unused channels by clicking on them with the middle mouse button. You can re-enable them via the [plot menu](uiguide.md#plot). Disabled channels will be recorded even when they are hidden.
+    Quickly hide/disable unused channels by clicking on them with the middle mouse button. You can re-enable them via the [device management](uiguide.md#device-management-panel). Disabled channels will NOT be recorded - only the plots that are visible in the live window.
 
 #### Cursor measurement
 
@@ -131,6 +226,10 @@ You can use the buttons at the top to perform certain actions:
 - :material-home: **Home:** Go to `Computer` (home directory)
 - :material-undo: **Up:** Go up one directory layer until you reach the topmost layer with all drives and shortcuts
 
+By right-clicking on supported files you can open a context menu to `Open`, `Rename` or `Delete` them:
+
+![ctx_menu](img/contextfilemenu.png)
+
 ## Main menu bar
 
 This section will go over every option in the main menu bar. 
@@ -139,9 +238,9 @@ This section will go over every option in the main menu bar.
 
 ![filemenu](img/filemenu.png){align=right}
 
-**:material-folder: Open:** Use the explorer to select a recording that you want to re-import. Supported filetypes are `pb.bin` and `xml`.
+**:material-folder: Open:** Use the explorer to select a recording that you want to re-import. Supported filetypes are `bin` and `xml`.
 
-**:material-folder: Open via file browser:** Use the integrated file manager to select a recording that you want to re-import. Supported filetypes are `pb.bin` and `xml`.
+**:material-folder: Open via file browser:** Use the integrated file manager to select a recording that you want to re-import. Supported filetypes are `bin` and `xml`.
 
 **:fontawesome-solid-floppy-disk: Save all unsaved recordings:** Opens an explorer window to select the directory you want to save all unsaved recordings into. This does ***not*** check for existing files so it is advised to choose an empty directory.
 
@@ -153,7 +252,7 @@ This section will go over every option in the main menu bar.
 
 **:fontawesome-solid-floppy-disk: Save:**: Saves the file as a protobuf file at the last known file save location (or where is was imported from)
 
-**:fontawesome-solid-floppy-disk: Save as...:**: Saves the file as a selectable filetype. See [filetypes](uiguide.html#filetypes-importexport) for more information.
+**:fontawesome-solid-floppy-disk: Save as...:**: Saves the file as a selectable filetype. See [filetypes](uiguide.md#filetypes-importexport) for more information.
 
 **:octicons-info-16: Properties**: Shows the metadata of the open plot file.
 
@@ -175,96 +274,72 @@ This section will go over every option in the main menu bar.
 
 Using the license menu you can manage all of your serial keys. Use the relevant menu item to manage them.
 
-- Manage log.flow keys for [log.flow activation](gettingstarted.html#logflow-activation)
+- Manage log.flow keys for [log.flow activation](gettingstarted.md#logflow-activation)
 - Manage EasyGraph key for [online activation](gettingstarted.md#online-activation) 
 
-### Plot
+### Settings
 
 ![plot](img/settingsmenu.png){align=right}
 
-The plot menu contains options to customize the appearance of the plot window:
+The settings menu contains options to change the behavour of the application and customize the appearance of the plot window:
 
-- You can change each plot's color by clicking on the colored square
-- Show/Hide plots by checking/unchecking them
-- Use the slider to change the line thickness of all plots
-- Show Markers on each received datapoint from the datalogger
+**GENERAL SETTINGS**
 
-You can also enable the `Cursor Measure` feature from here. This is described more throughoutly in [this section](uiguide.md#cursor-measurement).
+:octicons-checkbox-16: **Allow device settings during recording**: While recording the device settings (right-clicking on device name) is normally prohibited. This setting can override this.
 
-### Data Logging
+!!! warning "Not recommended"
+    Using this setting is not recommended because device parameters should not be touched during an active recording. This may also cause an uneven sample rate as there can be samples missing when parameters are synchronized between the pc and the device.
 
-#### Trigger options 
+**VISUAL SETTINGS**
 
-![dataloggermenu](img/datalogmenu.png){align=right}
+:octicons-sliders-16: **Line thickness:** Change the line width of all plots to make it thicker/thinner
 
-The **Data Logging** menu contains options about the trigger functionality. The trigger can automatically start and stop a recording if one or multiple predefined condiditions are true. 
+:octicons-sliders-16: **Flowrate decimals:** Adjust the number of displayed decimal places in the [live value panel](#live-value-panel) for frequency type measurements
 
-Before enabling the trigger using the corresponding checkbox or using the button [in the live graph panel](uiguide.md#controls), configure the trigger options below. You can optionally turn on a notification sound that plays through the speakers when the trigger starts or stops the recording.
+:octicons-sliders-16: **Volume decimals:** Adjust the number of displayed decimal places in the [live value panel](#live-value-panel) for counter type measurements
 
-**Trigger mode:** First you need to specify the trigger mode. This influences whether the trigger functionality will be disabled after the first successful trigger (`OneShot`) or stay active for subsequent triggers (`Repeating`).
+:octicons-sliders-16: **Analog decimals:** Adjust the number of displayed decimal places in the [live value panel](#live-value-panel) for analog type measurements
 
-**Recording duration:** Next you set the recording duration using the slider. The total duration is the sum of the recording duration and the pre-trigger duration that you set in the next step.
+:octicons-checkbox-16: **Show Markers on each datapoint:** Display a circle for every sample to see the actual timing of received datapoints from the dataloggers
 
-!!! tip "Tip: Custom duration"
-    You can set a custom duration in seconds by performing a left mouse click on the slider while holding down the `CTRL` key on the keyboard. This allows you to manually enter a value using the keyboard. Save by pressing `Enter`. 
+!!! info "Hint: Decimal places $\neq$ Precision"
+    The decimal places sliders do **not** affect the recoding resolution or internal value. 
 
-**Pre-Trigger duration:** This optional feature allows you to add values to the recording that happened before the trigger started. This gives you the chance to see what happened in the system before the trigger condition became true. After setting a non-zero value and enabling the trigger, the pre-trigger buffer (= ring buffer) will fill up will samples. Once full, you are ready to record!
+**PANEL VISIBILITY**
 
-#### Trigger conditions
+:octicons-checkbox-16: **Show Live Value Panel:** Displays the [live value panel](#live-value-panel) panel on the right that contains the live values of all datalogging streams in text form. The cursor measurement results are also displayed here.
 
-The trigger will fire if one or two conditions match. You can select how those conditions mathematically interact with each other:
+:octicons-checkbox-16: **Show Device Manager:** Show the [device management panel](#device-management-panel) on the left in order to connect to or manage datalogging devices.
 
-- **Disabled**: Only condition 1 will be used
-- **AND**: Trigger is true if condition 1 and condition 2 are both true
-- **OR**: Trigger is true either condition 1 or condition 2 or both are true
+:octicons-checkbox-16: **Show File Browser:** Show the integrated file browser to open files.
 
-The conditions itself are simple comparisons that you can configure using dropdown menus. The available options are layed out in the following table:
+:octicons-checkbox-16: **Show Recordings Panel:** Show the bottom left panel that contains all recordings and imported datasets.
 
-| Channels | Operators | Operator description | Value |
-| --- | --- | --- | --- |
-| Flowrate 1 | =  | equal to | Enter value |
-| Flowrate 2 | != | not equal to |  |
-| Volume 1 | > | greater than |   |
-| Volume 2 | >= | greater or equal than |   |
-|  | < | smaller than |   |
-|  | <= | smaller or equal than |   |
+:octicons-checkbox-16: **Show Performance Meters:** Show performance meters for the application in the top menu bar. The measured values are rendering performance (in FPS/Hz), CPU Load (in %) and RAM usage (in MB).
+
+![perf](img/perfmeters.png "Performance meters")
 
 
-### Math
+**STARTUP BEHAVIOUR**
 
-![mathunit](img/mathunitmenu_pic.png){align=right width=40%}
+:octicons-checkbox-16: **Skip Startup Logo Animation:** Check to not show the logo animation to save some seconds on program start.
 
-Using the **Math and Unit menu** you can set channel specific unit calculations. 
+![winloc2](img/winloc.png){align=right}
 
-In this menu you can also change the unit label that is shown below the value. To actually convert the value to other units, use the math options (factor and summand).
 
-If you expand the `Load..` menu, you can save/restore your math presets and use calculation functions:
+:octicons-sliders-16: **Set default window startup location:** Using this feature, you can save the main EasyGraph window size and starting location that will be set at every program launch. To save the current location and size, simply press `Save`. To delete the custom starting location, press the `Delete` button. If no custom location is set (and thus no `Delete` button is visible), EasyGraph will start centered on the main monitor with some margin on each side. 
 
-- **Save to preset..:** Save the current factor, summand and unit to a preset with a user-definable name. It is recommended that you choose a name that helps you differentiate this preset later, e.g. include the channel type, flowmeter name, IPF, unit or testbench no.
+You can use the Window Start Location feature for example to launch EasyGraph in fullscreen mode on another monitor.
 
-- **Load preset..:** Load a previously saved preset. Left-click shows a list of all presets. Right-click on a specific preset in this list shows a menu with an option to permanently delete the preset. 
+It is not recommended to use this feature if you are frequently changing monitor configurations (e.g. docking your mobile workstation).
 
-- **Calculate [...] from [...]:** Using this button, the frequency/count value can be converted into the corresponding flowrate/volume value just by using the K-Factor of the flowmeter. 
+If the window is not visible after program start, close it using its taskbar icon and press and hold the `Shift` key during the next program start. This will reset the start location to default.
 
-- **Look-up from database..:** Using this option, you can easily choose a VSE flowmeter's default K-Factor if you don't know the average/mean K-Factor of the specific device. 
+??? question "Help! I can't see the EasyGraph window after starting the application!"
+    If you used the **Set default window startup location:** feature before and changed the monitor configuration, it is possible that the main EasyGraph window is positioned out of the screen bounds. In this case close EasyGraph using the taskbar or task manager and hold shift during the next program launch. This will set the window position to default for this start and you can delete the custom window start position. 
 
-Refer to the following video for visual guidance:
+**POWERSAVING**
 
-<video controls="" src="img/mathunitmenu.mp4"> </video>  
-
-Using the sliders at the bottom you can change the number of visible decimal places (in the [live value panel](uiguide.md#live-value-panel)) separately for Volume and Flow. This setting does not affect the recoding resolution or internal value. 
-
-### Window
-
-#### Visibility
-
-Using the window menu, you can toggle the visibility of the following panels:
-
-- Live Value Panel (right)
-- File Browser (left)
-- Recordings Panel (bottom right)
-
-#### Powersave Mode
 
 ![powersave](img/powersave.png){align=right}
 
@@ -274,21 +349,13 @@ There are three different powersave modes for the unfocused program state. When 
 
 ![powersavethrottle](img/powersavethrottle.png){align=right}
 
+:octicons-sliders-16: **Mode:** Change the amount of powersaving the program will try to achieve:
+
 - Off: Always render at full speed (0% power saving)
 - Normal/Throttle: Lower framerate to _6 fps_ (~50% power saving) :material-arrow-right: `default`
 - Maximum: Stop rendering (~95% power saving)
 
 !!! success "Remark: Recording performance is not affected when unfocused or minimized!"
-
-#### Window Start Location
-
-![winloc2](img/winloc.png){align=right}
-
-Using this feature, you can save the main EasyGraph window size and starting location that will be set at every program launch. To save the current location and size, simply press `Save`. To delete the custom starting location, press the `Delete` button. If no custom location is set (and thus no `Delete` button is visible), EasyGraph will start centered on the main monitor with some margin on each side.
-
-You can use the Window Start Location feature for example to launch EasyGraph in fullscreen mode on another monitor.
-
-If the window is not visible after program start, close it using its taskbar icon and press and hold the `Shift` key during the next program start. This will reset the start location to default.
 
 ### Help
 
@@ -299,7 +366,7 @@ In the **Help** menu you can find helpful options, such as:
 - Option to reset math presets
 - Option to restore the default window layout
 
-#### Update Check
+### Update Check
 
 On each program start the software will check for software updates. Updates can contain new features, more device support, bugfixes and stability improvements. If a new update is available, a window will be shown with information about the changes and a link to the download page. 
 

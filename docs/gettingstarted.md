@@ -34,9 +34,9 @@ The activation procedure depends on the on the device you got the EasyGraph soft
 
 The following video shows how to enter the serial number key in order to activate the software. Multiple serial keys for different log.flow devices can be saved and managed. The dashes (:material-arrow-right: **-** ) in the serial key do not need to be entered.
 
-<video controls="" src="img/logflowsetkey.mp4"> </video>  
+<video controls="" src="img/logflowsetkey.mp4" style="border-radius: 5px;"> </video>  
 
-By right-clicking, you can also add a label to the key to remember which device it belongs to. Alternatively you could for example add your customer id here to find it easily later when you want to [update the software](uiguide.html#update-check).
+By right-clicking, you can also add a label to the key to remember which device it belongs to. Alternatively you could for example add your customer id here to find it easily later when you want to [update the software](uiguide.md#update-check).
 
 ### Online Activation
 
@@ -47,7 +47,7 @@ By right-clicking, you can also add a label to the key to remember which device 
 
 After purchase you will receive an email with the license key. After entering this key into the software (see video below), you will be able to connect to all supported device types.
 
-<video controls="" src="img/additionallickey.mp4"> </video>  
+<video controls="" src="img/additionallickey.mp4" style="border-radius: 5px;"> </video>  
 
 Using the device menu in the top bar you can also edit or remove the license key from the computer. This could be required if you have exceeded the activation limit and want to activate it on another pc. 
 
@@ -63,7 +63,7 @@ In order to establish a device connection, make sure the device is connected pro
   <figcaption>Click on the connect button to start the connection procedure</figcaption>
 </figure>
 
-In the **Device management panel** use the `Auto-Connect` button to start the connection process which should be fully automatic (except for the Display/FU option where a COM-Port has to be selected using the `More` button). If a connection can't be established, you may have not entered a license key, as described in the [previous chapter](gettingstarted.md#software-activation). 
+In the [**Device management panel**](uiguide.md#device-management-panel) use the `Auto-Connect` button to start the connection process which should be fully automatic (except for the Display/FU option where a COM-Port has to be selected using the `More` button). If a connection can't be established, you may have not entered a license key, as described in the [previous chapter](gettingstarted.md#software-activation). 
 
 <figure markdown>
   ![livegraph](img/main_new2.png){ loading=lazy }
@@ -79,13 +79,15 @@ When the connection is established, it will be added to the device list below th
 
 Use your mouse to navigate the plot window. Refer to the following video:
 
-<video controls autoplay loop src="img/ui_easygraph.mp4"> </video>  
+<video controls autoplay loop src="img/ui_easygraph.mp4" style="border-radius: 5px;"> </video>  
 
 ### Recording 
 
 Starting a recording is as easy as clicking the `RECORD` button with the left mouse button. If you want to directly specify a custom filename, right-click the `RECORD` button or shift-click it.
 
-<video controls autoplay loop src="img/record_btn.mp4"> </video>  
+All currently visible channels will be recorded. Disabled but available channels will therefore **NOT** be recorded!
+
+<video controls autoplay loop src="img/record_btn.mp4" style="border-radius: 20px;"> </video>  
 
 You will also notice green `START` and red `STOP` indicators in the timeline and a new entry in the recordings panel in the bottom right corner. 
 

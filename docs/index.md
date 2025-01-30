@@ -6,7 +6,7 @@
 Log.flow can be used as an excellent data logging tool. Using the PC Software EasyGraph, highly dynamic processes can be analyzed with sampling rates up to 
 1000 Hz. The flow rate and volume of both channels can be recorded simultaneously.
 
-<video controls autoplay loop src="img/easygraphdemo.mp4"> </video>  
+<video controls autoplay loop src="img/easygraphdemo.mp4" style="border-radius: 5px;"> </video>  
 
 ### Highlights { data-search-exclude }
 
@@ -34,8 +34,6 @@ In addition to [log.flow](devices.md#logflow-datalogging-system), other devices 
 
 -  [Display/FU converters](devices.md#displayfu-converter-rs232) (A341/A350/FU210)
 
--  [esi pressure sensors](devices.md#esi-usb-pressure-sensor)
-
 ## Structure { data-search-exclude }
 
 This documentation is structured into the following main chapters:
@@ -43,7 +41,6 @@ This documentation is structured into the following main chapters:
 * [Getting Started](gettingstarted.md) for setup/activation instructions and how to start a recording
 * [Supported Devices](devices.md) describes how different hardware devices are connected 
 * [User Interface Guide](uiguide.md) shows how each of the software components works
-* [Advanced Usage](advanced.md) shows examples for more advanced applications 
 * [Log.flow](logflow.md) explains the hardware features and specifications of the log.flow device
 * [Troubleshooting](faqs.md) shows how to solve the commonly asked questions and problems
 

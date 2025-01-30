@@ -1,7 +1,10 @@
 # Log.flow
 
+
 !!! info "Connection and usage description"
-    You can find all of the connection diagrams and a description how to use log.flow with EasyGraph [in the Devices tab](devices.html#logflow-datalogging-system). This section is for technical data.
+    You can find all of the connection diagrams and a description how to use log.flow with EasyGraph [in the Devices tab](devices.md#logflow-datalogging-system). This section is for technical data.
+
+<video controls autoplay loop src="img/logflowteaser.mp4" style="border-radius: 20px;"> </video>  
 
 ## :material-package-variant: Box contents
 

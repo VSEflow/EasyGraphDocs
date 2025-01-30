@@ -6,7 +6,6 @@ nav:
     - Getting Started: gettingstarted.md
     - Devices: devices.md
     - User Interface Guide: uiguide.md
-    - Advanced Features: advanced.md
     - Log.flow: logflow.md
     - Troubleshooting: faqs.md
     - Changelog: changelog.md
@@ -58,7 +57,6 @@ plugins:
             Getting Started: Erste Schritte
             Devices: Geräte
             User Interface Guide: Benutzeroberfläche
-            Advanced Features: Sonderfunktionen
             Troubleshooting: Problemlösungen
             Changelog: Änderungshistorie
             About: Über

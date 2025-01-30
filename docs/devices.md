@@ -302,7 +302,7 @@ As there are three different evaluation units supported by EasyGraph, select the
 
 ### Device menu
 
-![logflowdevmenu](img/device_eval.png){align=right}
+![evalmenu](img/device_eval.png){align=right}
 
 #### Activation
 
