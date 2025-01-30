@@ -1,0 +1,1294 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="gettingstarted.html">
+      
+      
+        <link rel="next" href="uiguide.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Geräte - VSE EasyGraph v2.2 Dokumentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#logflow-datalogging-system" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="index.html" title="VSE EasyGraph v2.2 Dokumentation" class="md-header__button md-logo" aria-label="VSE EasyGraph v2.2 Dokumentation" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VSE EasyGraph v2.2 Dokumentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Geräte
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sprache wechseln">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../devices.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="devices.html" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Hauptnavigation" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="gettingstarted.html" class="md-tabs__link">
+        
+  
+    
+  
+  Erste Schritte
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="devices.html" class="md-tabs__link">
+        
+  
+    
+  
+  Geräte
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="uiguide.html" class="md-tabs__link">
+        
+  
+    
+  
+  Benutzeroberfläche
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="logflow.html" class="md-tabs__link">
+        
+  
+    
+  
+  Log.flow
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="faqs.html" class="md-tabs__link">
+        
+  
+    
+  
+  Problemlösungen
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="changelog.html" class="md-tabs__link">
+        
+  
+    
+  
+  Änderungshistorie
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="about.html" class="md-tabs__link">
+        
+  
+    
+  
+  Über
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="VSE EasyGraph v2.2 Dokumentation" class="md-nav__button md-logo" aria-label="VSE EasyGraph v2.2 Dokumentation" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    VSE EasyGraph v2.2 Dokumentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gettingstarted.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Erste Schritte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Geräte
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="devices.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Geräte
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#logflow-datalogging-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log.flow Datenerfassungssystem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Log.flow Datenerfassungssystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anschluss" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anschluss
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geratemenu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gerätemenü
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gerätemenü">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#freischaltung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Freischaltung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#einstellungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Einstellungen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Einstellungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konfiguration-der-messung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konfiguration der Messung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-supply-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stromversorgungskonfiguration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eingangskonfiguration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ioflow-with-usb-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      IO.flow® mit USB-Master
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IO.flow® mit USB-Master">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anschluss_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anschluss
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geratemenu_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gerätemenü
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gerätemenü">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#freischaltung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Freischaltung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#einstellungen_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Einstellungen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#displayfu-wandler-rs232" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anzeige/FU-Wandler RS232
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anzeige/FU-Wandler RS232">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anschluss_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anschluss
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geratemenu_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gerätemenü
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gerätemenü">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#freischaltung_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Freischaltung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verbindungsvorgang" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verbindungsvorgang
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geschwindigkeit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geschwindigkeit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="uiguide.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Benutzeroberfläche
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logflow.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log.flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faqs.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problemlösungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="changelog.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Änderungshistorie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Über
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Geräte</h1>
+
+<p>Springen Sie schnell zu dem entsprechenden Abschnitt:</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> <a href="devices.html#logflow-datalogging-system">log.flow</a></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> <a href="devices.html#ioflow-with-usb-master">IO.flow®</a></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> <a href="devices.html#displayfu-wandler-rs232">Display/FU-Wandler</a></p>
+<h2 id="logflow-datalogging-system">Log.flow Datenerfassungssystem<a class="headerlink" href="#logflow-datalogging-system" title="Permanent link">#</a></h2>
+<h3 id="anschluss">Anschluss<a class="headerlink" href="#anschluss" title="Permanent link">#</a></h3>
+<p>Bevor Sie ein Kabel oder eine Spannung an das log.flow-Gerät anschließen, beachten Sie bitte die folgenden Anschlussdiagramme, um Schäden zu vermeiden. </p>
+<p>Es gibt drei verschiedene Hardware-Versionen von log.flow. Wählen Sie die Registerkarte aus, die dem Typ des log.flow entspricht, über den Sie verfügen:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">log.flow (4881)</label><label for="__tabbed_1_2">log.flow V (4881/V)</label><label for="__tabbed_1_3">log.flow I (4881/I)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Verfügbare Kanäle:</strong></p>
+<ul>
+<li>Eingang 1: Ein/Zweikanal Quadratur (HTL-Pegel <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> 0..24 V) <ul>
+<li>Frequenz (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Durchflussrate)</li>
+<li>Impulszahl (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Volumen)</li>
+</ul>
+</li>
+<li>Eingang 2: Ein/Zweikanal-Quadratur (HTL-Pegel <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> 0..24 V) + <a href="devices.html#input-configuration">Zusatzfunktionen</a><ul>
+<li>Frequenz (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Durchflussrate)</li>
+<li>Impulszahl (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Volumen)</li>
+</ul>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info: TTL inkompatibel</p>
+<p>Leider können TTL-Eingangssignale (0..5 V) <strong>nicht</strong> mit der Standardversion von log.flow gemessen werden. Sie können den Vertrieb um eine angepasste Version mit TTL-Pegel-Unterstützung bitten.</p>
+</div>
+<p><strong>Diagramm:</strong></p>
+<p><img alt="logflownormalconn" id="conndiagramm-logflow" src="img/Connection%20Diagram%20log.flow_normal.svg" /></p>
+</div>
+<div class="tabbed-block">
+<p><strong>Verfügbare Kanäle:</strong></p>
+<ul>
+<li>Eingang 1: Ein/Zweikanal Quadratur (HTL-Pegel <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> 0..24 V) <ul>
+<li>Frequenz (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Durchflussrate)</li>
+<li>Impulszahl (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Volumen)</li>
+</ul>
+</li>
+<li>Eingang 2: Analoger Spannungseingang an Pin 4 (Max. Spannung <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> 0..10 V) <ul>
+<li>Analoger Wert (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Druck, Temperatur,..)</li>
+</ul>
+</li>
+</ul>
+<p>Wenn Sie einen Sensor an den Analogeingang anschließen, stellen Sie sicher, dass Sie die Pinbelegung stimmt. Wahrscheinlich müssen Sie ein Adapterkabel für Ihren spezifischen Sensor bauen, um die Pinbelegung des Sensordatenblatts an die von log.flow U anzupassen.</p>
+<div class="admonition danger">
+<p class="admonition-title">Vorsicht: 10 V Spannungsgrenze</p>
+<p>Der Anschluss eines HTL-Durchflussmessers oder einer höheren Spannung als 10 V an den Eingangspin von Eingang 2 kann das Gerät beschädigen!</p>
+</div>
+<p><strong>Diagramm:</strong></p>
+<p><img alt="logflowvconn" id="conndiagramm-logflowv" src="img/Connection%20Diagram%20log.flow_voltage.svg" /></p>
+</div>
+<div class="tabbed-block">
+<p><strong>Verfügbare Kanäle:</strong></p>
+<ul>
+<li>Eingang 1: Ein/Zweikanal Quadratur (HTL-Pegel <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> 0..24 V) <ul>
+<li>Frequenz (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Durchflussrate)</li>
+<li>Impulszahl (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Volumen)</li>
+</ul>
+</li>
+<li>Eingang 2: Analoger Stromeingang an Pin 4 (Max. Strom <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> 20 mA) <ul>
+<li>Analogwert (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Druck, Temperatur,..)</li>
+</ul>
+</li>
+</ul>
+<p>Wenn Sie einen Sensor an den Analogeingang anschließen, stellen Sie sicher, dass Sie die Pinbelegung stimmt. Wahrscheinlich müssen Sie ein Adapterkabel für Ihren spezifischen Sensor bauen, um die Pinbelegung des Sensordatenblatts an die von log.flow I anzupassen.</p>
+<div class="admonition warning">
+<p class="admonition-title">Achtung: Keine T-Stücke mit Stromeingang verwenden</p>
+<p>Versuchen Sie nicht, den analogen Sensor einer bestehenden Anlage mit einem T-Stück parallel zum log.flow I anzuschließen, da dies zu einem Kurzschluss führt. Stromsensoren müssen in Reihe geschaltet werden. Intern funktioniert die Strommessung über einen Shunt, der Pin 4 mit GND verbindet. </p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info: 20 mA Stromgrenze</p>
+<p>Der Anschluss eines HTL-Durchflussmessers oder einer niederohmigen Quelle an Eingang 2 sollte vermieden werden. <em>Log.flow I</em> wird den Kurzschluss erkennen und den Eingang deaktivieren. Sie können den ausgelösten Kurzschlussschutz im Gerätemenü von EasyGraph wieder aktivieren.</p>
+</div>
+<p><strong>Diagramm:</strong></p>
+<p><img alt="logflowiconn" id="conndiagramm-logflowi" src="img/Connection%20Diagram%20log.flow_current.svg" /></p>
+</div>
+</div>
+</div>
+<h3 id="geratemenu">Gerätemenü<a class="headerlink" href="#geratemenu" title="Permanent link">#</a></h3>
+<p><img align="right" alt="logflowdevmenu" src="img/logflowdevicemenu.png" /></p>
+<h4 id="freischaltung">Freischaltung<a class="headerlink" href="#freischaltung" title="Permanent link">#</a></h4>
+<p>Wenn Sie sich zum ersten Mal mit Ihrem log.flow-Gerät verbinden, lesen Sie im Kapitel <a href="gettingstarted.html#logflow-activation">Aktivierung</a> nach, wie Sie den Serienschlüssel einstellen. Die log.flow-Lizenz ist hardwaregebunden an das jeweilige log.flow-Gerät und die zu diesem Gerät passende Seriennummer muss in der EasyGraph-Software eingegeben werden. Der gesamte Vorgang funktioniert auch ohne Internetverbindung.</p>
+<h4 id="einstellungen">Einstellungen<a class="headerlink" href="#einstellungen" title="Permanent link">#</a></h4>
+<h5 id="konfiguration-der-messung"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M495.9 166.6c3.2 8.7.5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4l-55.6 17.8c-8.8 2.8-18.6.3-24.5-6.8-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4c-1.1-8.4-1.7-16.9-1.7-25.5s.6-17.1 1.7-25.4l-43.3-39.4c-6.9-6.2-9.6-15.9-6.4-24.6 4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2 5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8 8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/></svg></span> Konfiguration der Messung<a class="headerlink" href="#konfiguration-der-messung" title="Permanent link">#</a></h5>
+<p>Öffnen Sie die <strong>Geräteeinstellungen</strong>, indem Sie mit der rechten Maustaste auf das angeschlossene log.flow-Gerät im Geräteverwaltungspanel klicken. Mit den folgenden Einstellungen können die Messeigenschaften von log.flow angepasst werden. Alle Änderungen der Einstellungen werden sofort wirksam. Um die Einstellungen zwischen mehreren Sitzungen/Verbindungen beizubehalten, verwenden Sie die Schaltfläche <code>Save to EEPROM</code>, um die aktuellen Einstellungen dauerhaft auf das log.flow-Gerät zu schreiben.</p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19.03 7.39 1.42-1.42c-.45-.51-.9-.97-1.41-1.41L17.62 6c-1.55-1.26-3.5-2-5.62-2a9 9 0 0 0 0 18c5 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61M13 14h-2V7h2v7m2-13H9v2h6V1Z"/></svg></span> Abtastrate</strong>: Standardmäßig wird die Abtastrate dynamisch auf der Grundlage der eingestellten Verlaufszeit des Plots berechnet (Modus: <code>Automatisch</code>). Dies stellt sicher, dass Sie bei einer Langzeitaufzeichnung nicht mit einer unglaublich hohen Samplerate aufnehmen. Im Modus <code>Manuell</code> können Sie die Abtastrate unabhängig auf einen Wert zwischen 1 Hz und ~1000 Hz (max.) einstellen.</p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 12v7.88c.04.3-.06.62-.29.83a.996.996 0 0 1-1.41 0l-2.01-2.01a.989.989 0 0 1-.29-.83V12h-.03L4.21 4.62a1 1 0 0 1 .17-1.4c.19-.14.4-.22.62-.22h14c.22 0 .43.08.62.22a1 1 0 0 1 .17 1.4L14.03 12H14Z"/></svg></span> Filterpegel</strong>: Mit den Schiebereglern für den Filterpegel kann der interne Frequenzfilter des log.flow eingestellt werden. Ein niedriger Filterwert führt zu einer schnelleren und lauteren Frequenzdarstellung - ein höherer Filterwert glättet die Frequenz. Die Anstiegszeiten des Filters können Sie der folgenden Tabelle entnehmen:</p>
+<table>
+<thead>
+<tr>
+<th>Anstiegszeit [ms]</th>
+<th>Filtereinstellung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Aus</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Dynamisch</td>
+</tr>
+<tr>
+<td>100</td>
+<td>Mittel</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Glatt [Standard]</td>
+</tr>
+<tr>
+<td>2000</td>
+<td>Schwer</td>
+</tr>
+<tr>
+<td>5000</td>
+<td>Extrem</td>
+</tr>
+</tbody>
+</table>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 12v7.88c.04.3-.06.62-.29.83a.996.996 0 0 1-1.41 0l-2.01-2.01a.989.989 0 0 1-.29-.83V12h-.03L4.21 4.62a1 1 0 0 1 .17-1.4c.19-.14.4-.22.62-.22h14c.22 0 .43.08.62.22a1 1 0 0 1 .17 1.4L14.03 12H14Z"/></svg></span> Filtereigenschaften</strong>: Hier muss nichts eingestellt werden. Dieses Mini-Diagramm ist nur ein grober visueller Hinweis darauf, wie der Filter auf eine Rechteckwelle reagiert.</p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19.03 7.39 1.42-1.42c-.45-.51-.9-.97-1.41-1.41L17.62 6c-1.55-1.26-3.5-2-5.62-2a9 9 0 0 0 0 18c5 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61M13 14h-2V7h2v7m2-13H9v2h6V1Z"/></svg></span> Frequenzabschaltung</strong>: Die Frequenz-Cutoff-Einstellung legt die Zeit fest, nach der die gemessene Frequenz auf Null gesetzt wird, wenn keine Signalflanken mehr an den Eingangspins gemessen werden. Er ist vergleichbar mit dem Parameter <code>WAIT TIME</code> bei unseren Auswertegeräten (A341/A350/FU210). Die Änderung dieses Parameters beeinflusst die minimale Frequenz, die mit log.flow gemessen werden kann. Für den normalen Gebrauch ist die höchste Einstellung <code>Late (1.8s)</code> vollkommen ausreichend und erlaubt die Messung von Frequenzen bis zu 0,56 Hz. Wenn Sie eine schnellere Reaktion auf einen Stopp benötigen, können Sie die Cutoff-Zeit herabsetzen, was jedoch zur Folge hat, dass die minimale Frequenz, die gemessen werden kann, höher ist.</p>
+<table>
+<thead>
+<tr>
+<th>Cutoff-Zeit [ms]</th>
+<th>Cutoff-Einstellung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>250</td>
+<td>Früh</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td>1800</td>
+<td>Spät [Voreinstellung]</td>
+</tr>
+</tbody>
+</table>
+<p>Die minimale Frequenz <span class="arithmatex">\(f_{min}\)</span> lässt sich aus der Abschaltzeit <span class="arithmatex">\(t_{wait}\)</span> mit der folgenden Formel berechnen:</p>
+<div class="arithmatex">\[
+f_{min} = \frac{1}{t_{wait} \textrm{ [in Sekunden]}}
+\]</div>
+<h5 id="power-supply-configuration"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m16.56 5.44-1.45 1.45A5.969 5.969 0 0 1 18 12a6 6 0 0 1-6 6 6 6 0 0 1-6-6c0-2.17 1.16-4.06 2.88-5.12L7.44 5.44A7.961 7.961 0 0 0 4 12a8 8 0 0 0 8 8 8 8 0 0 0 8-8c0-2.72-1.36-5.12-3.44-6.56M13 3h-2v10h2"/></svg></span> Stromversorgungskonfiguration<a class="headerlink" href="#power-supply-configuration" title="Permanent link">#</a></h5>
+<p>Log.flow unterstützt 3 verschiedene Stromversorgungsschemata: </p>
+<ul>
+<li>Log.flow verfügt über einen internen Spannungsbooster von 5 V auf 24 V, der für die Stromversorgung der Durchflussmessgeräte verwendet werden kann. Wenn die Gesamtstromaufnahme der Durchflussmesser 50 mA überschreitet, sollte ein externes Netzteil verwendet werden, um das log.flow-Gerät nicht zu beschädigen oder zu überhitzen. </li>
+<li>Eine andere Möglichkeit ist die Verwendung eines T-Verteiler-M12-Steckers an einem der Anschlüsse des Durchflussmessers, um eine bestehende 24-V-Versorgungsspannung von außen (z. B. von der Testbench) einzuspeisen. Die Spannung wird dann an den anderen Durchflussmesser weitergeleitet.</li>
+<li>Externe Stromversorgung über die DC-Buchse und das externe 24-V-Netzteil (im Lieferumfang enthalten) für höhere Stromanforderungen. Bitte nicht zusammen mit T-Stücken verwenden!</li>
+</ul>
+<p>Sie können den Spannungsbooster über das Kontrollkästchen <code>Power via USB?</code> im Gerätemenü aktivieren.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tipp: Spannungsbooster schaltet sich bei Nichtgebrauch ab</p>
+<p>Wenn Sie das externe Netzteil einstecken, kommt es zu keinem Kurzschluss, da dieser Zustand automatisch erkannt wird. Der Spannungsbooster wird dann automatisch deaktiviert.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Warnung: Ext. Netzteil nicht bei Anlagenspannung verwenden</p>
+<p>Vor Anschluss und Verwendung des externen Netzteils sollte, insbesondere bei Verwendung von T-Stücken, sichergestellt werden, dass das Netzteil nicht Spannung in die Anlage zurückspeist bzw. mit dem 24V-Rail der Anlage verbunden wird. Andernfalls wird bei Spannungsabschaltung der Anlage diese über das Netzteil versorgt und dieses überhitzt oder kann sogar zerstört werden. </p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">log.flow (4881)</label><label for="__tabbed_2_2">log.flow V (4881/V)</label><label for="__tabbed_2_3">log.flow I (4881/I)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>keine weiteren Optionen für diesen Gerätetyp</em></p>
+</div>
+<div class="tabbed-block">
+<p><em>keine weiteren Optionen zu diesem Gerätetyp</em></p>
+</div>
+<div class="tabbed-block">
+<p><strong>Kurzschlusserkennung</strong></p>
+<p>Bei Verwendung von <em>log.flow I</em> überwacht das Gerät kontinuierlich den Strom am Analogeingang. Im Falle eines anhaltenden Kurzschlusses wird der Stromfluss mit Hilfe eines digitalen Schalters gestoppt, und es erscheint ein Meldungsfenster, um den Benutzer auf diesen Zustand hinzuweisen. </p>
+<p>Im Gerätemenü wird der folgende Hinweis angezeigt: </p>
+<p><img alt="logflowi_analog_short" src="img/short_analog.png" /></p>
+<p>Sie können den Stromfluss manuell wieder aktivieren, indem Sie die Schaltfläche <code>Re-Enable...</code> betätigen. Falls der Kurzschluss immer noch vorhanden ist, wird die Warnung erneut angezeigt. </p>
+</div>
+</div>
+</div>
+<h5 id="input-configuration"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 7V3h-2v4h-4V3H8v4C7 7 6 8 6 9v5.5L9.5 18v3h5v-3l3.5-3.5V9c0-1-1-2-2-2Z"/></svg></span> Eingangskonfiguration<a class="headerlink" href="#input-configuration" title="Permanent link">#</a></h5>
+<p>Die verfügbaren Optionen für die Eingangskonfiguration hängen wiederum vom Gerätetyp ab. Wählen Sie die zu Ihrem Gerätetyp passende Registerkarte:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">log.flow (4881)</label><label for="__tabbed_3_2">log.flow V (4881/V)</label><label for="__tabbed_3_3">log.flow I (4881/I)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Kanal 1</strong></p>
+<p>Für den ersten Eingangskanal können Sie zwischen 3 Eingangsoptionen wählen:</p>
+<ul>
+<li>Quadratur (2 Kanäle auf Pin 2+4)</li>
+<li>Einzelner Kanal (an Pin 2)</li>
+<li>Einzelner Kanal (auf Pin 4)</li>
+</ul>
+<p><strong>Kanal 2</strong></p>
+<p>Kanal 2 der <em>standard log.flow Version</em> erweitert die Funktionen von Kanal 1 um eine zusätzliche externe Lautstärkerückstellfunktion. Sie können zwischen den folgenden Optionen wählen:</p>
+<p><img alt="extreset" src="img/extreset.png" /></p>
+<p>Um diese Funktion zu nutzen, schließen Sie ein digitales 24V-Eingangssignal, einen Schalter/Taster oder etwas Ähnliches an den zweiten Kanal an. Wenn die ausgewählte Bedingung erfüllt ist, wird die Lautstärke von Kanal 1 zurückgesetzt. </p>
+<p>Die flankenempfindlichen Einstellungen setzen den Wert bei einem Pinwechsel zurück. Bei Verwendung dieser Option sollten mechanische Schalter mit einem Tiefpassfilter entprellt werden.</p>
+<p>Die pegelempfindlichen Einstellungen halten den Lautstärkewert auf Null, solange die Bedingung erfüllt ist.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tipp: PNP-Eingang</p>
+<p>Der einfachste Weg, einen externen Schalter anzuschließen, besteht darin, ihn zwischen die 24V-Leitung und den Eingangspin (2 oder 4) zu schalten. Der log.flow-Eingang verhält sich durch den internen Pulldown-Widerstand wie ein PNP-Eingang.</p>
+<p><Zeichenabschrift>
+<img alt="connectbtn" loading="lazy" src="img/logflow_edge_volreset.svg" />
+<figcaption>Beispiel für den Anschluss eines Schalters zur externen Rückstellung der Lautstärke</figcaption>
+</figure></p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Kanal 1</strong></p>
+<p>Für den ersten Eingangskanal können Sie zwischen 3 Eingangsoptionen wählen:</p>
+<ul>
+<li>Quadratur (2 Kanäle auf Pin 2+4)</li>
+<li>Einzelner Kanal (auf Pin 2)</li>
+<li>Einzelner Kanal (auf Pin 4)</li>
+</ul>
+<p><strong>Kanal 2</strong></p>
+<p>Kanal 2 von <em>log.flow V</em> hat nur die analoge Funktionalität [fest auf Pin 4] (devices.md#conndiagramm-logflowv "Anschlussplan"). Es gibt nichts zur Auswahl.</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Kanal 1</strong></p>
+<p>Für den ersten Eingangskanal können Sie zwischen 3 Eingangsoptionen wählen:</p>
+<ul>
+<li>Quadratur (2 Kanäle auf Pin 2+4)</li>
+<li>Einkanalig (an Pin 2)</li>
+<li>Einzelner Kanal (auf Pin 4)</li>
+</ul>
+<p><strong>Kanal 2</strong></p>
+<p>Kanal 2 von <em>log.flow I</em> hat nur die analoge Funktionalität [fest auf Pin 4] (devices.md#conndiagramm-logflowi "Anschlussplan"). Es gibt nichts zur Auswahl. </p>
+</div>
+</div>
+</div>
+<h2 id="ioflow-with-usb-master">IO.flow® mit USB-Master<a class="headerlink" href="#ioflow-with-usb-master" title="Permanent link">#</a></h2>
+<h3 id="anschluss_1">Anschluss<a class="headerlink" href="#anschluss_1" title="Permanent link">#</a></h3>
+<p>Der IO-Link USB-Master ist als portables und leichtes Werkzeug zur schnellen Parametrierung und Auswertung von IO-Link im Feld oder zu Demonstrationszwecken konzipiert. </p>
+<p>In Kombination mit dem IO.flow®-Konverter von VSE kann der Master die IO-Link-Prozessdaten an den PC streamen, um die Frequenz- und Impulszahlwerte zu analysieren und aufzuzeichnen. </p>
+<p>Der IO.flow® Konverter unterstützt die folgende Eingangskonfiguration:</p>
+<p><strong>Verfügbare Kanäle:</strong></p>
+<ul>
+<li>Ein-/Zweikanal Quadratur (HTL-Pegel <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> 0..24 V)<ul>
+<li>Frequenz (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Durchflussrate)</li>
+<li>Impulszahl (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Volumen)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Diagramm:</strong></p>
+<p><Abbildung markdown>
+  <img alt="conndiagrammio" loading="lazy" src="img/Connection%20Diagram%20IOflow.svg" />
+<br />
+<figcaption>IO.flow Anschlussdiagramm mit USB-Master und Flowmeter</figcaption></p>
+</figure>
+<p>Verbinden Sie die M12-Buchse des IO.flow mit dem IO-Link-Master und den M12-Stecker mit dem Durchflussmesser, wie im Anschlussplan dargestellt. Verbinden Sie anschließend den Master über ein Mini-USB-Kabel mit dem PC.</p>
+<h3 id="geratemenu_1">Gerätemenü<a class="headerlink" href="#geratemenu_1" title="Permanent link">#</a></h3>
+<p><img align="right" alt="logflowdevmenu" src="img/device_io.png" /></p>
+<h4 id="freischaltung_1">Freischaltung<a class="headerlink" href="#freischaltung_1" title="Permanent link">#</a></h4>
+<p>Wenn Sie sich zum ersten Mal mit Ihrem IO-Link-Master verbinden, lesen Sie im Kapitel <a href="gettingstarted.html#online-activation">Online-Aktivierung</a> nach, wie Sie den Lizenzschlüssel einstellen. Die <em>Zusatzgeräte-Lizenz</em> wird online aktiviert und benötigt bei jedem Programmstart eine funktionierende Internetverbindung.</p>
+<h4 id="einstellungen_1">Einstellungen<a class="headerlink" href="#einstellungen_1" title="Permanent link">#</a></h4>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19.03 7.39 1.42-1.42c-.45-.51-.9-.97-1.41-1.41L17.62 6c-1.55-1.26-3.5-2-5.62-2a9 9 0 0 0 0 18c5 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61M13 14h-2V7h2v7m2-13H9v2h6V1Z"/></svg></span> Abtastrate</strong>: Die Abtastrate steuert die Aktualisierungszeit des Wertes in der Plotansicht. Eine höhere Aktualisierungsfrequenz führt zu einer dynamischeren Darstellung des Flusses. Sie können sie auf einen Wert zwischen 1 Hz und ~1000 Hz einstellen (was der minimalen unterstützten IO-Link-Auffrischungszeit des Masters entspricht).</p>
+<div class="admonition info">
+<p class="admonition-title">Hinweis: Samplerate <span class="arithmatex">\(\neq\)</span> Filter Dynamik</p>
+<p>Um die Filtercharakteristik des Frequenzplots anzupassen, muss die Filtereinstellung vorab mit dem <em>IO.flow Configurator</em> oder anderen IO-Link-Parametrisierungstechniken eingestellt werden. </p>
+</div>
+<h2 id="displayfu-wandler-rs232">Anzeige/FU-Wandler RS232<a class="headerlink" href="#displayfu-wandler-rs232" title="Permanent link">#</a></h2>
+<h3 id="anschluss_2">Anschluss<a class="headerlink" href="#anschluss_2" title="Permanent link">#</a></h3>
+<p>Da EasyGraph drei verschiedene Auswerteeinheiten unterstützt, wählen Sie den Reiter, der dem angeschlossenen Gerätetyp entspricht:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">A341</label><label for="__tabbed_4_2">A350</label><label for="__tabbed_4_3">FU210</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Verfügbare Kanäle:</strong></p>
+<ul>
+<li>Ein-/Zweikanal Quadratur (HTL-Pegel <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> 0..24 V)<ul>
+<li>Frequenz (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Durchflussrate)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Diagramm:</strong></p>
+<p><img alt="a341" src="img/Connection%20Diagram%20A341%20New%20EasyLoader.svg" /></p>
+</div>
+<div class="tabbed-block">
+<p><strong>Verfügbare Kanäle:</strong></p>
+<ul>
+<li>Ein/Zweikanal-Quadratur (HTL-Pegel <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> 0..24 V)<ul>
+<li>Wählen Sie zwischen:<ul>
+<li>Frequenz (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Durchflussrate)</li>
+<li>Impulszahl (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Volumen)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Diagramm:</strong></p>
+<p><img alt="a350" src="img/Connection%20Diagram%20A350%20New%20EasyLoader.svg" /></p>
+</div>
+<div class="tabbed-block">
+<p><strong>Verfügbare Kanäle:</strong></p>
+<ul>
+<li>Ein/Zweikanal-Quadratur (HTL-Pegel <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> 0..24 V)<ul>
+<li>Wählen Sie zwischen:<ul>
+<li>Frequenz (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Durchflussrate)</li>
+<li>Impulszahl (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> Volumen)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Diagramm:</strong></p>
+<p><img alt="fu210" src="img/Connection%20Diagram%20FU210%20New%20EasyLoader.svg" /></p>
+</div>
+</div>
+</div>
+<h3 id="geratemenu_2">Gerätemenü<a class="headerlink" href="#geratemenu_2" title="Permanent link">#</a></h3>
+<p><img align="right" alt="evalmenu" src="img/device_eval.png" /></p>
+<h4 id="freischaltung_2">Freischaltung<a class="headerlink" href="#freischaltung_2" title="Permanent link">#</a></h4>
+<p>Wenn Sie zum ersten Mal eine Verbindung zu Ihrer Auswerteeinheit herstellen, lesen Sie bitte das Kapitel <a href="gettingstarted.html#online-activation">Online-Aktivierung</a>, um zu erfahren, wie Sie den Lizenzschlüssel festlegen. Die <em>Zusatzgeräte-Lizenz</em> wird online aktiviert und benötigt bei jedem Programmstart eine funktionierende Internetverbindung.</p>
+<h4 id="verbindungsvorgang">Verbindungsvorgang<a class="headerlink" href="#verbindungsvorgang" title="Permanent link">#</a></h4>
+<p>Bei Verwendung eines Display/FU-Konverters ist eine automatische Verbindung nicht möglich, da sie von der verwendeten RS232-Schnittstelle abhängt. Wählen Sie den COM-Port aus, der der Schnittstelle entspricht, die für den Anschluss an die Auswerteeinheit verwendet wird.</p>
+<div class="admonition question">
+<p class="admonition-title">Hilfe: Wie finde ich den richtigen COM-Port?</p>
+<p>Um den richtigen COM-Port zu finden, an dem Ihre Auswerteeinheit angeschlossen ist, können Sie den in Windows eingebauten <strong>Gerätemanager</strong> (<code>devmgmt.msc</code>) verwenden. Öffnen Sie den Gerätemanager über das Startmenü, öffnen Sie die Kategorie "Ports (COM &amp; LPT)" und achten Sie auf Änderungen, während Sie den USB-RS232-Adapter einstecken. Beim Einstecken des Adapters sollte ein neuer COM-Port erscheinen. Dies ist der Port, den Sie in EasyGraph auswählen (in diesem Fall: <strong>COM42</strong>). Wenn der PC mit einem nativen RS232-Anschluss ausgestattet ist, lautet der Anschlussname normalerweise <strong>COM1</strong>.</p>
+<p><img alt="comlpt" src="img/comlpt.png" /></p>
+</div>
+<p>Bei einigen Geräten werden die Daten nicht sofort nach der Verbindung übertragen. Das liegt an der seriellen Abklingzeit, die die Verbindungsleitung haben muss, bevor sie mit dem Senden der Live-Werte beginnt. Diese Abklingzeit wird in den Geräteeinstellungen angezeigt, die Sie mit einem Rechtsklick auf das Gerät aufrufen können. Leider kann dies nicht geändert werden. Nachdem Sie die Abkühlzeit abgewartet haben, sollten die Werte angezeigt werden und der Plot ist aktiv.</p>
+<h4 id="geschwindigkeit">Geschwindigkeit<a class="headerlink" href="#geschwindigkeit" title="Permanent link">#</a></h4>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19.03 7.39 1.42-1.42c-.45-.51-.9-.97-1.41-1.41L17.62 6c-1.55-1.26-3.5-2-5.62-2a9 9 0 0 0 0 18c5 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61M13 14h-2V7h2v7m2-13H9v2h6V1Z"/></svg></span> Datenrate</strong>: Für Auswertungseinheiten ist die Datenrate fest vorgegeben und wird auf die höchstmögliche Einstellung gesetzt. </p>
+<p>Es gibt keine weiteren Einstellungen zu konfigurieren. Um die Parametrierung zu ändern, müssen Sie die Verbindung zu EasyGraph trennen und den <a href="https://www.vse-flow.com/downloads.html" title="vse-flow.com/downloads"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg></span> EasyLoader oder OS10.0</a>  verwenden .</p>
+<!--
+## esi USB-Drucksensor {id="esi-usb-pressure-sensor"}
+
+![gs4200](img/gs4200usbport.png){ align=right width=20%}
+
+EasyGraph unterstützt auch die Verwendung von esi USB-Drucksensoren. 
+Derzeit [v2.0.5] werden die folgenden Sensoren unterstützt:
+
+- esi [GS4200-USB](https://esi-tec.com/product/gs4200-usb/) (langsame Datenübertragung)
+- Abtastrate: bis zu ~2 Hz
+
+Die Unterstützung des viel schnelleren [GD4200-USB](https://esi-tec.com/product/gd4200-usb/) (~1000 Hz) ist für zukünftige Versionen geplant.
+
+### GS4200 Spezifikationen
+
+![gs4200](img/GS-4200-USB-1-copy.webp){ align=right width=20%}
+
+"Der digitale Druckmessumformer GS4200-USB von ESI Technology wurde entwickelt, um Druck direkt auf einem Computer zu messen, zu analysieren und aufzuzeichnen, ohne dass kostspielige E/A-Schnittstellenkarten erforderlich sind"[^1]
+
+"Der GS4200-USB wird über den USB-Anschluss des Computers mit Strom versorgt (2 Meter Kabel im Lieferumfang enthalten) und die Daten werden über die mitgelieferte Windows-Schnittstellensoftware auf dem PC dargestellt [...]. Der Sensor hat auch einen eingebauten Temperatursensor, der gleichzeitig mit der Druckmessung angezeigt werden kann. Es können Ober- und Unterdruckgrenzwerte eingestellt und Markierungen auf dem Live-Druckmessdiagramm angebracht werden, um wichtige Druckänderungen anzuzeigen. Die Abtastrate ist wählbar von 0,2 Sekunden bis zu 600 Sekunden mit insgesamt elf Optionen, außerdem gibt es neun Optionen für die Druckeinheit, darunter bar, psi, mbar und MPa sowie Überdruck oder absolute Referenz."[^1]
+
+"Die Druckbereiche beginnen bei -1 bis 2,5 bar und reichen bis zu 0 bis 4000 bar, wobei insgesamt sieben Standarddruckbereiche verfügbar sind und kundenspezifische Bereiche auf Anfrage erhältlich sind."[^1]
+
+[^1]: Quelle: [https://esi-tec.com/product/gs4200-usb/](https://esi-tec.com/product/gs4200-usb/)
+
+### Anschluss
+
+**Verfügbare Kanäle:**
+
+- Druck (Bereich abhängig vom Sensortyp, Einheit wählbar)
+- Temperatur (in _°C_)
+
+Schließen Sie den Sensor über das mitgelieferte Mini-USB-Kabel an den PC an.
+
+### Gerätemenü
+
+![logflowdevmenu](img/esi_Devmenu.png){align=right}
+
+#### Freischaltung
+
+Wenn Sie den Drucksensor zum ersten Mal anschließen, lesen Sie im Kapitel [Online-Aktivierung](gettingstarted.md#online-activation) nach, wie Sie den Lizenzschlüssel festlegen. Die _Zusatzgeräte-Lizenz_ wird online aktiviert und benötigt bei jedem Programmstart eine funktionierende Internetverbindung.
+
+#### Einstellungen
+
+**:material-ruler: Druckeinheit**: Sie können zwischen den folgenden Optionen wählen:
+
+Einheiten |
+--- | 
+bar | 
+mbar | 
+psi | 
+MPa |
+Pa | 
+mm H²O | 
+mm Hg | 
+atm | 
+km cm² | 
+kPa | 
+
+Zusätzlich werden Informationen über den angeschlossenen Sensor angezeigt, z.B. Seriennummer, Sensorbereich und das letzte Kalibrierungsdatum.
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
+        
+          
+          <a href="gettingstarted.html" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Erste Schritte">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              <div class="md-ellipsis">
+                Erste Schritte
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="uiguide.html" class="md-footer__link md-footer__link--next" aria-label="Weiter: Benutzeroberfläche">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Weiter
+              </span>
+              <div class="md-ellipsis">
+                Benutzeroberfläche
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate", "navigation.expand", "navigation.top", "navigation.footer", "content.tooltips", "content.tabs.link", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

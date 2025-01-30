@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>index.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="index.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/index.html"/>
+    </url>
+    <url>
+        <loc>about.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="about.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/about.html"/>
+    </url>
+    <url>
+        <loc>changelog.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="changelog.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/changelog.html"/>
+    </url>
+    <url>
+        <loc>devices.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="devices.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/devices.html"/>
+    </url>
+    <url>
+        <loc>faqs.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="faqs.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/faqs.html"/>
+    </url>
+    <url>
+        <loc>gettingstarted.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="gettingstarted.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/gettingstarted.html"/>
+    </url>
+    <url>
+        <loc>logflow.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="logflow.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/logflow.html"/>
+    </url>
+    <url>
+        <loc>uiguide.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="uiguide.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/uiguide.html"/>
+    </url>
+    <url>
+        <loc>de/index.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="index.html"/>
+    </url>
+    <url>
+        <loc>de/about.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/about.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="about.html"/>
+    </url>
+    <url>
+        <loc>de/changelog.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/changelog.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="changelog.html"/>
+    </url>
+    <url>
+        <loc>de/devices.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/devices.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="devices.html"/>
+    </url>
+    <url>
+        <loc>de/faqs.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/faqs.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="faqs.html"/>
+    </url>
+    <url>
+        <loc>de/gettingstarted.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/gettingstarted.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="gettingstarted.html"/>
+    </url>
+    <url>
+        <loc>de/logflow.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/logflow.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="logflow.html"/>
+    </url>
+    <url>
+        <loc>de/uiguide.html</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/uiguide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="uiguide.html"/>
+    </url>
+</urlset>

@@ -1,0 +1,858 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="devices.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Erste Schritte - VSE EasyGraph v2.2 Dokumentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#erste-schritte" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="index.html" title="VSE EasyGraph v2.2 Dokumentation" class="md-header__button md-logo" aria-label="VSE EasyGraph v2.2 Dokumentation" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VSE EasyGraph v2.2 Dokumentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Erste Schritte
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sprache wechseln">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../gettingstarted.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="gettingstarted.html" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Hauptnavigation" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="gettingstarted.html" class="md-tabs__link">
+        
+  
+    
+  
+  Erste Schritte
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="devices.html" class="md-tabs__link">
+        
+  
+    
+  
+  Geräte
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="uiguide.html" class="md-tabs__link">
+        
+  
+    
+  
+  Benutzeroberfläche
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="logflow.html" class="md-tabs__link">
+        
+  
+    
+  
+  Log.flow
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="faqs.html" class="md-tabs__link">
+        
+  
+    
+  
+  Problemlösungen
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="changelog.html" class="md-tabs__link">
+        
+  
+    
+  
+  Änderungshistorie
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="about.html" class="md-tabs__link">
+        
+  
+    
+  
+  Über
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="VSE EasyGraph v2.2 Dokumentation" class="md-nav__button md-logo" aria-label="VSE EasyGraph v2.2 Dokumentation" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    VSE EasyGraph v2.2 Dokumentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Erste Schritte
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="gettingstarted.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Erste Schritte
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      Überblick
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-activation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software-Aktivierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software-Aktivierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logflow-activation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log.flow-Aktivierung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-activation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Online-Aktivierung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#die-erste-aufnahme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Die erste Aufnahme
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Die erste Aufnahme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#herstellen-einer-verbindung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herstellen einer Verbindung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plot-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plot-Navigation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="devices.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geräte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="uiguide.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Benutzeroberfläche
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logflow.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log.flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faqs.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problemlösungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="changelog.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Änderungshistorie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Über
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!-- for setup/activation instructions and connecting the hardware correctly -->
+
+<h1 id="erste-schritte">Erste Schritte<a class="headerlink" href="#erste-schritte" title="Permanent link">#</a></h1>
+<h2 id="uberblick">Überblick<a class="headerlink" href="#uberblick" title="Permanent link">#</a></h2>
+<p>Beim ersten Start der Software sehen Sie den folgenden Bildschirm:</p>
+<p><img alt="Hauptbildschirm" src="img/main_new_firststart.png" title="Hauptbildschirm von EasyGraph" /></p>
+<ol>
+<li><strong>Geräteverwaltung</strong>: Dieses Panel verwaltet alle Geräteverbindungen. Sobald die Lizenzschlüssel eingegeben sind, können Sie die Schaltfläche <code>Auto-Connect</code> verwenden, um eine Verbindung zu log.flow- oder IO.flow-Geräten herzustellen, die an den Computer angeschlossen sind. Für andere Gerätetypen können Sie die Schaltfläche <code>More</code> verwenden, um manuell eine Verbindung über einen COM-Port herzustellen. In diesem Fenster können Sie die Geräteparameter ändern und jeden vom Gerät bereitgestellten Kanal auswählen/bearbeiten.</li>
+<li><strong>Live-Graph-Panel</strong>: Dieses Feld zeigt entweder die von den angeschlossenen Geräten gestreamten Messwerte oder die Messwerte einer zuvor aufgezeichneten Datei an. Die X-Achse zeigt die Zeit seit der Messung des Wertes an. Wenn Live-Werte eingespeist werden, entspricht der Wert ganz rechts dem aktuellen Wert. Die Darstellung unterstützt mehrere Kanäle, die in verschiedenen Farben angezeigt werden. Es gibt bis zu drei Y-Achsen (links/rechts), um die Durchflussrate, das Volumen und die Analogwerte auf einer eigenen Achse darzustellen.</li>
+<li><strong>Live-Wert-Panel</strong>: Dieses Feld zeigt die aktuellen Werte als Text/Zahl an.</li>
+<li><strong>Aufzeichnungsfeld</strong>: In diesem Bereich werden alle laufenden und abgeschlossenen Aufzeichnungen aufgelistet. Sie können sie von hier aus öffnen (<em>Doppelklick</em>) und verwalten (<em>Rechtsklick</em>). Es ist normalerweise ausgeblendet, wenn keine Aufnahmen vorhanden sind.</li>
+</ol>
+<p>Der erste Schritt nach dem Öffnen der Software ist in der Regel das Verbinden mit einem externen Datenerfassungsgerät. Verwenden Sie dazu die <code>Auto-Connect</code> und <code>More</code> Schaltflächen in der Geräteverwaltung. Wenn Sie diese Software zum ersten Mal verwenden, müssen Sie einen passenden Lizenzschlüssel eingeben. Dies wird im <a href="gettingstarted.html#software-activation" title="Software Activation">nächsten Kapitel</a> erklärt.</p>
+<div class="admonition question">
+<p class="admonition-title">Hilfe: Panel ist nicht sichtbar</p>
+<p>Sie können Panels immer wieder sichtbar machen, indem Sie das Menü <code>Settings</code> in der oberen Menüleiste verwenden und das Fenster, das Sie wieder aktivieren möchten, ankreuzen.</p>
+</div>
+<h2 id="software-activation">Software-Aktivierung<a class="headerlink" href="#software-activation" title="Permanent link">#</a></h2>
+<p>Das Aktivierungsverfahren hängt von dem Gerät ab, mit dem Sie die EasyGraph-Software erworben haben:</p>
+<ul>
+<li>
+<p>Wenn Sie die Software mit einem log.flow-Datenlogger verwenden, ist die Lizenz hardwaregebunden an das jeweilige log.flow-Gerät und die zu diesem Gerät passende Seriennummer muss eingegeben werden. Der gesamte Vorgang funktioniert ohne Internetverbindung.</p>
+</li>
+<li>
+<p>Wenn Sie die Software mit einer anderen Hardware (z.B. IO.flow®, Auswerteeinheiten wie A341, A350 oder FU210) verwenden, muss eine Online-Lizenzaktivierung durchgeführt werden, um die Software nutzen zu können. </p>
+</li>
+</ul>
+<h3 id="logflow-activation">Log.flow-Aktivierung<a class="headerlink" href="#logflow-activation" title="Permanent link">#</a></h3>
+<p>Das folgende Video zeigt, wie Sie den Seriennummernschlüssel eingeben, um die Software zu aktivieren. Es können mehrere Seriennummernschlüssel für verschiedene log.flow-Geräte gespeichert und verwaltet werden. Die Bindestriche (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> <strong>-</strong> ) im Serienschlüssel müssen nicht eingegeben werden.</p>
+<video controls="" src="img/logflowsetkey.mp4" style="border-radius: 5px;"> </video>
+
+<p>Wenn Sie mit der rechten Maustaste klicken, können Sie dem Schlüssel auch eine Bezeichnung hinzufügen, um sich zu merken, zu welchem Gerät er gehört. Alternativ können Sie hier z. B. Ihre Kundennummer eintragen, um sie später leicht wiederzufinden, wenn Sie <a href="uiguide.html#update-check">die Software aktualisieren</a> wollen.</p>
+<h3 id="online-activation">Online-Aktivierung<a class="headerlink" href="#online-activation" title="Permanent link">#</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Hinweis: Nur online</p>
+<p>Bei jedem Softwarestart benötigt die Software eine Internetverbindung, um die Gültigkeit des Lizenzschlüssels zu überprüfen.</p>
+</div>
+<p><strong>Unterstützte Geräte:</strong> IO.flow® mit USB-Master, A341, A350, FU210</p>
+<p>Nach dem Kauf erhalten Sie eine E-Mail mit dem Lizenzschlüssel. Nachdem Sie diesen Schlüssel in die Software eingegeben haben (siehe Video unten), können Sie sich mit allen unterstützten Gerätetypen verbinden.</p>
+<video controls="" src="img/additionallickey.mp4" style="border-radius: 5px;"> </video>
+
+<p>Über das Gerätemenü in der oberen Leiste können Sie den Lizenzschlüssel auch bearbeiten oder vom Computer entfernen. Dies kann erforderlich sein, wenn Sie das Aktivierungslimit überschritten haben und es auf einem anderen PC aktivieren möchten. </p>
+<h2 id="die-erste-aufnahme">Die erste Aufnahme<a class="headerlink" href="#die-erste-aufnahme" title="Permanent link">#</a></h2>
+<!-- ganz allgemein geräteunabhängig -->
+<h3 id="herstellen-einer-verbindung">Herstellen einer Verbindung<a class="headerlink" href="#herstellen-einer-verbindung" title="Permanent link">#</a></h3>
+<p>Um eine Geräteverbindung herzustellen, vergewissern Sie sich, dass das Gerät richtig mit dem Computer verbunden und eingeschaltet ist. Hilfe dazu finden Sie in der <a href="devices.html">gerätespezifischen Verbindungsanleitung</a>. </p>
+<figure>
+<p><img alt="connectbtn" loading="lazy" src="img/connectbtn.png" />
+  </p>
+<figcaption>Klicken Sie auf die Schaltfläche "Verbinden", um den Verbindungsvorgang zu starten</figcaption>
+</figure>
+<p>Im <a href="uiguide.html#device-management-panel"><strong>Geräteverwaltungspanel</strong></a> verwenden Sie die Schaltfläche „Auto-Connect“, um den Verbindungsprozess zu starten, der vollautomatisch ablaufen sollte (mit Ausnahme der Option Display/FU, bei der ein COM-Port über die Schaltfläche <code>More</code> ausgewählt werden muss). Wenn eine Verbindung nicht hergestellt werden kann, haben Sie möglicherweise keinen Lizenzschlüssel eingegeben, wie im <a href="gettingstarted.html#software-activation">vorherigen Kapitel</a> beschrieben.</p>
+<figure>
+<p><img alt="livegraph" loading="lazy" src="img/main_new2.png" />
+  </p>
+<figcaption>EasyGraph-Fenster, wenn ein Gerät angeschlossen ist</figcaption>
+</figure>
+<p>Wenn die Verbindung hergestellt ist, wird sie der Geräteliste unterhalb der Schaltfläche „Auto-Connect“ hinzugefügt. Eine aktive Geräteverbindung wird durch den roten Geräteeintrag angezeigt. Die aktuell gemessenen Werte werden im <strong>Live value panel</strong> und im <strong>Live graph panel</strong> angezeigt.</p>
+<div class="admonition question">
+<p class="admonition-title">Hilfe: Ich sehe nur Nullwerte</p>
+<p>Vergewissern Sie sich, dass Sie Ihre Sensoren mit 24V versorgt haben und dass sie die richtigen Signalpegel (HTL) ausgeben. Wenn Sie log.flow verwenden, lesen Sie <a href="devices.html#power-supply-configuration">diesen Abschnitt</a>, um weitere Informationen über die Stromversorgung Ihrer Sensoren zu erhalten.</p>
+</div>
+<h3 id="plot-navigation">Plot-Navigation<a class="headerlink" href="#plot-navigation" title="Permanent link">#</a></h3>
+<p>Benutzen Sie Ihre Maus, um im Diagrammfenster zu navigieren. Sehen Sie sich dazu das folgende Video an:</p>
+<video "stop"="&quot;stop&quot;" <figure="&lt;figure" aufzeichnungstafel="aufzeichnungstafel" autoplay="autoplay" controls="controls" der="der" ecke.="ecke." einen="einen" eintrag="eintrag" img="img" in="in" linken="linken" loop="loop" neuen="neuen" record_btn.mp4"="record_btn.mp4&quot;" sowie="sowie" src="img/ui_easygraph.mp4" start"="start&quot;" style="border-radius: 5px;&gt; &lt;/video&gt;  
+
+In der Zeitleiste sehen Sie außerdem die grün/roten Indikatoren " und="und" unteren="unteren">
+<p><img alt="indicators" loading="lazy" src="img/timelinestartstop.png" />
+  </p>
+<figcaption>Start/Stop-Indikatoren in der Zeitleiste</figcaption>
+</figure>
+<figure>
+<p><img alt="recentry" loading="lazy" src="img/recentry.png" />
+  </p>
+<figcaption>Aufzeichnungseintrag nach Beendigung der Aufzeichnung</figcaption>
+</figure>
+<p>Um die aufgezeichneten Daten zu öffnen, <em>doppelklicken</em> Sie auf den Eintrag im Aufzeichnungsfenster. Es erscheint eine neue Registerkarte über dem <strong>Live-Plot-Panel</strong>, die mit <code>Datei:</code> und dem Namen der Aufzeichnung beginnt. Sie können in dieser Aufzeichnung auf die gleiche Weise navigieren wie in der Live-Darstellung. </p>
+<p>!!! warning „Aufnahmedateien werden nicht automatisch gespeichert!“
+    Es ist wichtig zu beachten, dass in diesem Zustand die Aufzeichnungen noch nicht auf der Festplatte gespeichert sind und im flüchtigen RAM verbleiben, bis Sie sie in eine Datei exportieren. Um die Datei zu exportieren, entscheiden Sie sich zwischen einem vollständigen Datenexport oder einer PDF-Ausgabe zum Drucken.</p>
+<ul>
+<li>
+<p>Für einen vollständigen Datenexport (der später wieder importiert werden kann) klicken Sie <em>mit der rechten Maustaste</em> auf den Eintrag in der Aufzeichnungsliste oder im Menü <code>Datei</code> und wählen Sie <code>Speichern unter...</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> <code>Protobuf-File [.bin]</code>.</p>
+</li>
+<li>
+<p>Für einen PDF-Bericht klicken Sie <em>mit der rechten Maustaste</em> auf den Eintrag in der Liste der Aufzeichnungen oder im Menü <code>Datei</code> und wählen Sie <code>Speichern unter...</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> <code>Bericht [.pdf]</code>.</p>
+</li>
+</ul>
+<p>Nach erfolgreichem Export verwandelt sich das <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4Z"/></svg></span> Symbol in ein <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg></span> Symbol.</p>
+</video>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
+        
+          
+          <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Start">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              <div class="md-ellipsis">
+                Start
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="devices.html" class="md-footer__link md-footer__link--next" aria-label="Weiter: Geräte">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Weiter
+              </span>
+              <div class="md-ellipsis">
+                Geräte
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate", "navigation.expand", "navigation.top", "navigation.footer", "content.tooltips", "content.tabs.link", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
