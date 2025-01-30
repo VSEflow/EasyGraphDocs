@@ -1,5 +1,10 @@
 # Log.flow
 
+!!! info "Anschluss- und Verwendungsbeschreibung"
+    Alle Anschlussdiagramme und eine Beschreibung zur Verwendung von log.flow mit EasyGraph finden Sie [im Reiter Geräte](devices.md#logflow-datalogging-system). Dieser Abschnitt ist für technische Daten gedacht.
+
+<video controls autoplay loop src="img/logflowteaser.mp4" style="border-radius: 20px;"> </video>
+
 ## :material-package-variant: Box-Inhalt
 
 > Bestell-Nr. für <img src="img/logflow.svg" alt="Zeichnung" width="40"/> (Zweifacher Frequenzeingang): 4881
@@ -33,10 +38,13 @@ Gewicht | 140 g
 **Parameter** | **Wert**
 --- | ---
 Versorgungsspannung DC-Netzanschluss | 24 V DC nominal (18-26 V DC)
-Leerlaufstrom | ~ _tbd_ mA
 Maximale Stromaufnahme (DC-Netz/extern) | Abhängig von der Spannungsversorgung
 Maximale Stromaufnahme (Hochsetzsteller) | 50 mA (@24 V) insgesamt
 Maximal empfohlene Eingangsfrequenz | ≤ 250 kHz
 Maximal messbare Eingangsfrequenz | ~ 1-2 MHz
 Maximale USB-Abtastrate | 1000 Hz
 Frequenzmessgenauigkeit/Fehler | ≤ 0,005%
+
+<!--
+Leerlaufstrom | ~ _tbd_ mA
+-->

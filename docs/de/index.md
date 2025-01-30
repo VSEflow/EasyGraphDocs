@@ -6,7 +6,7 @@
 Log.flow kann als hervorragendes Werkzeug zur Datenaufzeichnung eingesetzt werden. Mit der PC-Software EasyGraph können hochdynamische Prozesse mit Abtastraten von bis zu 
 1000 Hz analysiert werden. Die Durchflussrate und das Volumen beider Kanäle können gleichzeitig aufgezeichnet werden.
 
-<video controls autoplay loop src="img/easygraphdemo.mp4"> </video>  
+<video controls autoplay loop src="img/easygraphdemo.mp4" style="border-radius: 8px;"> </video>  
 
 ### Highlights { data-search-exclude }
 
@@ -54,10 +54,10 @@ Der PC, auf dem die EasyGraph-Software läuft, sollte folgende Mindestanforderun
 
 * 2 GHz Prozessor (x64) oder schneller
 * 64-Bit-Windows-Installation
-* 4GB RAM oder mehr
+* 8GB RAM oder mehr
 * Grafikkarte oder iGPU mit DirectX11-Unterstützung
-* 200 MB freier Festplattenspeicher
-* Bildschirmauflösung: mindestens 1440x900 px
+* 300 MB freier Festplattenspeicher
+* Bildschirmauflösung: empfohlen 1920 ⋅ 1080px mit DPI-Skalierung von 100%
 * USB 2.0-Schnittstelle oder besser (USB 3.0-Anschluss für maximale Strombelastbarkeit)
 * Optionale Internetverbindung für Update-Check
 

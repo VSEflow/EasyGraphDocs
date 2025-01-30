@@ -17,7 +17,7 @@
     This is a bug that happens when you use your `CTRL` key. You can fix this by pressing and holding the `CTRL` key on your keyboard and left-clicking on the bugged slider. Now release the `CTRL` key, press somewhere else in EasyGraph and then try again. It should be fixed!
 
 !!! question "Help: I can't see the EasyGraph window after starting the application"
-    If you used the **Set default window startup location:** feature before and changed the monitor configuration, it is possible that the main EasyGraph window is positioned out of the screen bounds. In this case close EasyGraph using the taskbar or task manager and hold shift during the next program launch. This will set the window position to default for this start and you can delete the custom window start position. 
+    If you used the **Set default window startup location** feature before and changed the monitor configuration, it is possible that the main EasyGraph window is positioned out of the screen bounds. In this case close EasyGraph using the taskbar or task manager and hold shift during the next program launch. This will set the window position to default for this start and you can delete the custom window start position. 
 
 ## :fontawesome-brands-usb: About log.flow
 

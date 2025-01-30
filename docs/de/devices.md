@@ -6,9 +6,6 @@ Springen Sie schnell zu dem entsprechenden Abschnitt:
 
 :material-arrow-right: [Display/FU-Wandler](devices.md#displayfu-wandler-rs232)
 
-:material-arrow-right: [esi-Drucksensor](devices.md#esi-usb-pressure-sensor)
-
-
 ## Log.flow Datenerfassungssystem {id="logflow-datalogging-system"}
 
 ### Anschluss
@@ -85,7 +82,7 @@ Wenn Sie sich zum ersten Mal mit Ihrem log.flow-Gerät verbinden, lesen Sie im K
 
 ##### :fontawesome-solid-gear: Konfiguration der Messung
 
-Mit den folgenden Einstellungen können die Messeigenschaften von log.flow angepasst werden. Alle Änderungen der Einstellungen werden sofort wirksam. Um die Einstellungen über mehrere Sitzungen/Verbindungen hinweg beizubehalten, verwenden Sie die Schaltfläche `Save to EEPROM`, um die aktuellen Einstellungen dauerhaft in das log.flow-Gerät zu schreiben.
+Öffnen Sie die **Geräteeinstellungen**, indem Sie mit der rechten Maustaste auf das angeschlossene log.flow-Gerät im Geräteverwaltungspanel klicken. Mit den folgenden Einstellungen können die Messeigenschaften von log.flow angepasst werden. Alle Änderungen der Einstellungen werden sofort wirksam. Um die Einstellungen zwischen mehreren Sitzungen/Verbindungen beizubehalten, verwenden Sie die Schaltfläche `Save to EEPROM`, um die aktuellen Einstellungen dauerhaft auf das log.flow-Gerät zu schreiben.
 
 **:material-timer: Abtastrate**: Standardmäßig wird die Abtastrate dynamisch auf der Grundlage der eingestellten Verlaufszeit des Plots berechnet (Modus: `Automatisch`). Dies stellt sicher, dass Sie bei einer Langzeitaufzeichnung nicht mit einer unglaublich hohen Samplerate aufnehmen. Im Modus `Manuell` können Sie die Abtastrate unabhängig auf einen Wert zwischen 1 Hz und ~1000 Hz (max.) einstellen.
 
@@ -300,7 +297,7 @@ Da EasyGraph drei verschiedene Auswerteeinheiten unterstützt, wählen Sie den R
 
 ### Gerätemenü
 
-![logflowdevmenu](img/device_eval.png){align=right}
+![evalmenu](img/device_eval.png){align=right}
 
 #### Freischaltung
 
@@ -315,14 +312,15 @@ Bei Verwendung eines Display/FU-Konverters ist eine automatische Verbindung nich
 
     ![comlpt](img/comlpt.png)
 
-Einige Geräte zeigen anstelle der grünen Schaltfläche [**:material-play: Running**] eine gelbe Meldung "Warten auf Abkühlung" an. Dies ist eine feste Zeitspanne, die das Gerät nach dem Aufbau einer Verbindung benötigt, bevor es mit dem Senden der Live-Werte beginnt. Dies kann leider nicht geändert werden. Nach dem Abwarten der Abkühlzeit sollten die Werte angezeigt werden und die Darstellung ist aktiv.
+Bei einigen Geräten werden die Daten nicht sofort nach der Verbindung übertragen. Das liegt an der seriellen Abklingzeit, die die Verbindungsleitung haben muss, bevor sie mit dem Senden der Live-Werte beginnt. Diese Abklingzeit wird in den Geräteeinstellungen angezeigt, die Sie mit einem Rechtsklick auf das Gerät aufrufen können. Leider kann dies nicht geändert werden. Nachdem Sie die Abkühlzeit abgewartet haben, sollten die Werte angezeigt werden und der Plot ist aktiv.
+
 
 #### Geschwindigkeit
 
 **:material-timer: Datenrate**: Für Auswertungseinheiten ist die Datenrate fest vorgegeben und wird auf die höchstmögliche Einstellung gesetzt. 
 
-Es gibt keine weiteren Einstellungen zu konfigurieren. Um die Parametrierung zu ändern, müssen Sie die Verbindung zu EasyGraph trennen und den [EasyLoader oder OS10.0] verwenden (https://www.vse-flow.com/downloads.html "vse-flow.com/downloads").
-
+Es gibt keine weiteren Einstellungen zu konfigurieren. Um die Parametrierung zu ändern, müssen Sie die Verbindung zu EasyGraph trennen und den [:material-link: EasyLoader oder OS10.0](https://www.vse-flow.com/downloads.html "vse-flow.com/downloads")  verwenden .
+<!--
 ## esi USB-Drucksensor {id="esi-usb-pressure-sensor"}
 
 ![gs4200](img/gs4200usbport.png){ align=right width=20%}
@@ -382,3 +380,5 @@ km cm² |
 kPa | 
 
 Zusätzlich werden Informationen über den angeschlossenen Sensor angezeigt, z.B. Seriennummer, Sensorbereich und das letzte Kalibrierungsdatum.
+
+-->

@@ -2,7 +2,7 @@
 
 ![mainwin](img/main_new2.png "Main EasyGraph window with panels")
 
-The software's user interface is based on panels in a main window. By default, the main window consists of the big [**Live graph panel**](uiguide.md#live-graph-panel) in the middle, the [**device management panel**](#device-management-panel) on the left and a [**Live value panel**](uiguide.md#live-value-panel) on the right, but additional windows can be toggled using the [Window menu](uiguide.md#window). You can drag the panels out of the window by dragging on the title bar of each panel and dropping them. To re-dock them, press and hold the `SHIFT` key while dragging and use the overlay to position it. 
+The software's user interface is based on panels in a main window. By default, the main window consists of the big [**Live graph panel**](uiguide.md#live-graph-panel) in the middle, the [**device management panel**](#device-management-panel) on the left and a [**Live value panel**](uiguide.md#live-value-panel) on the right, but additional windows can be toggled using the [Settings menu](uiguide.md#settings). You can drag the panels out of the window by dragging on the title bar of each panel and dropping them. To re-dock them, press and hold the `SHIFT` key while dragging and use the overlay to position it. 
 
 Previously saved recordings are shown in the [**recordings panel**](uiguide.md#recordings-panel) and open up as tabs of the [**Live graph panel**](uiguide.md#live-graph-panel). You can identify them by the `File:` prefix in the title bar.
 
@@ -56,7 +56,7 @@ If you plan to take long recordings, it is therefore advisable to reduce the sam
 
 ![dataloggermenu](img/datalogmenu.png){align=right}
 
-The **Trigger** context menu contains options about the trigger functionality. Open it by right-clicking in the `Trigger` button. The trigger can automatically start and stop a recording if one or multiple predefined condiditions are true. 
+The **Trigger** context menu contains options about the trigger functionality. Open it by right-clicking in the `Trigger` button. The trigger can automatically start and stop a recording if one or multiple predefined conditions are true. 
 
 Before enabling the trigger using the `Enable Trigger` checkbox or by pressing the `Trigger` button [in the live graph panel](uiguide.md#controls), configure the trigger options below. You can optionally turn on a notification sound that plays through the speakers when the trigger starts or stops the recording (Checkbox `Play sound on trigger`).
 
@@ -134,7 +134,7 @@ Next to the channel name you will find the following channel options:
 
 Using the **Math settings** you can set channel specific unit calculations. 
 
-If you expand the `Load..` menu, you can save/restore your math presets and use calculation functions:
+Open the context menu of a channel to load/save/restore your math presets and use calculation functions:
 
 - **Save to preset..:** Save the current factor, summand and unit to a preset with a user-definable name. It is recommended that you choose a name that helps you differentiate this preset later, e.g. include the channel type, flowmeter name, IPF, unit or testbench no.
 
@@ -216,7 +216,7 @@ You can show the **file browser panel** by enabling the option in the main menu 
 
 In the topmost layer the file browser will list all attached harddrives and network drives. Additionally commonly used directories such as `Desktop`,  `User` and `Documents` will be shown. 
 
-While directories are always shown, files are only shown if the filetype is compatible with **EasyGraph**. Supported file extensions are: `pb.bin` and `xml`. Import files (recordings) by double clicking on them. The program will then scan the file and verify, that it is compatible. If all checks pass, the file will be shown in the [Recordings panel](uiguide.md#recordings-panel).
+While directories are always shown, files are only shown if the filetype is compatible with **EasyGraph**. Supported file extensions are: `bin` and `xml`. Import files (recordings) by double clicking on them. The program will then scan the file and verify, that it is compatible. If all checks pass, the file will be shown in the [Recordings panel](uiguide.md#recordings-panel).
 
 ![navbuttons](img/navbtn_content.png)
 

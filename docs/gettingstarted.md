@@ -41,7 +41,7 @@ By right-clicking, you can also add a label to the key to remember which device 
 ### Online Activation
 
 !!! info "Hint: Online-only"
-    On each software start, the software requires an internet connection at startup to verify the validity of the license key.
+    On each software start, the software requires an internet connection to verify the validity of the license key.
 
 **Supported Devices:** IO.flow® with USB-Master, A341, A350, FU210
 
@@ -89,7 +89,7 @@ All currently visible channels will be recorded. Disabled but available channels
 
 <video controls autoplay loop src="img/record_btn.mp4" style="border-radius: 20px;"> </video>  
 
-You will also notice green `START` and red `STOP` indicators in the timeline and a new entry in the recordings panel in the bottom right corner. 
+You will also notice green `START` and red `STOP` indicators in the timeline and a new entry in the recordings panel in the bottom left corner. 
 
 <figure markdown>
   ![indicators](img/timelinestartstop.png){ loading=lazy }

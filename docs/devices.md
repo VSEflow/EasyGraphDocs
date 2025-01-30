@@ -86,7 +86,7 @@ If you are connecting to your log.flow device for the first time, refer to the c
 
 ##### :fontawesome-solid-gear: Measurement configuration
 
-pen the **Device settings** by right-clicking on the connected log.flow device in the device management panel. Using the following settings, the measurement characteristics of log.flow can be customized. All changes in settings take effect immediately. To keep the settings between multiple sessions/connections, use the `Save to EEPROM` button to write the current settings permanently to the log.flow device.
+Open the **Device settings** by right-clicking on the connected log.flow device in the device management panel. Using the following settings, the measurement characteristics of log.flow can be customized. All changes in settings take effect immediately. To keep the settings between multiple sessions/connections, use the `Save to EEPROM` button to write the current settings permanently to the log.flow device.
 
 **:material-timer: Sample rate**: By default, the sample rate will be calculated dynamically based on the set history time of the plot (Mode: `Automatic`). This makes sure, that you don't record at an incredibly high samplerate during a long-time recording. Using the `Manual` mode, you can set the sample rate indepentently to a value between 1 Hz and ~1000 Hz (max.).
 
